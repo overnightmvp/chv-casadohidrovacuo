@@ -7,14 +7,6 @@
   # No build command needed for static site
   command = ""
 
-# Redirect rules for clean URLs (optional)
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
-  conditions = {Role = ["admin"]}
-
 # Headers for security and performance
 [[headers]]
   for = "/*"
