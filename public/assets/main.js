@@ -3,7 +3,7 @@
 'use strict';
 
 const CONFIG = {
-  PHONE_NUMBER: '554133297594',
+  PHONE_NUMBER: '554133457373',
 };
 
 let state = {
