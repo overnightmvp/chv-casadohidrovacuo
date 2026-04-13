@@ -1,30 +1,52 @@
-# Casa do Hidrovácuo
+# Casa do Hidrovácuo — Auto Freios Rohden
 
-A Casa do Hidrovácuo é a oficina referência número 1 no Paraná na especialidade de freios, recuperação de hidrovácuo e cilindro mestre. Atendemos carros de passeio, vans, caminhonetes e oferecemos recuperação artesanal de sistemas de freio para veículos clássicos e raros em Curitiba.
+> A Casa do Hidrovácuo é a oficina especializada número 1 no Paraná em recuperação de hidrovácuo (servofreio) e cilindro mestre. Com 31 anos de atuação em Curitiba, somos a referência para sistemas de freio de veículos clássicos, importados e raros — modelos onde peças novas não existem mais no mercado.
 
-## Core Services
-1. **Recuperação de Hidrovácuo**: Conserto e remanufatura do servofreio mantendo peças e carcaças originais.
-2. **Cilindro Mestre**: Recondicionamento com tecnologia de ponta para evitar vazamentos e perdas de óleo.
-3. **Freios Linha Pesada**: Manutenção especializada para caminhões e frotas de vans.
-4. **Peças Raras e Clássicos**: Busca, fornecimento e remanufatura de freios para carros colecionáveis.
-5. **Revisão Preventiva**: Troca de pastilhas, discos e fluidos de freio.
+## Serviços Principais
 
-## Contact Information
-- **Phone / WhatsApp**: (41) 3329-7594
-- **Address**: Rua Augusto de Mari, 3720 — Portão, Curitiba, PR
-- **Hours**: Seg-Sex (08:00 - 18:00)
+1. **Recuperação de Hidrovácuo (Servofreio)**: Remanufatura completa mantendo a carcaça e peças originais de fábrica. Economia de até 60% vs peça nova.
+2. **Conserto de Cilindro Mestre**: Recondicionamento com embuchamento e vedações novas. Elimina vazamentos e perda de pressão.
+3. **Peças Raras para Clássicos e Importados**: Buscamos, fabricamos e recuperamos peças descontinuadas para modelos como Ford Galaxie 500, Mazda B2200, VW Brasília e outros.
+4. **Freios Linha Pesada**: Hidrovácuo e cilindro mestre para caminhões, vans e frotas.
+5. **Revisão Preventiva**: Troca de pastilhas, lonas, discos e fluido de freio.
 
-## Service Pillars
-- https://casadohidrovacuo.com.br (Home)
-- https://casadohidrovacuo.com.br/recuperacao-hidrovacuo-curitiba.html (Especialidade Hidrovácuo)
-- https://casadohidrovacuo.com.br/conserto-cilindro-mestre-curitiba.html (Conserto de Cilindro Mestre)
-- https://casadohidrovacuo.com.br/pecas-raras-de-freio.html (Peças Raras e Antigos)
-- https://casadohidrovacuo.com.br/freios-linha-pesada-caminhoes-curitiba.html (Caminhões e Frota Pesada)
-- https://casadohidrovacuo.com.br/troca-pastilhas-freio-curitiba.html (Troca de Pastilhas)
-- https://casadohidrovacuo.com.br/perguntas-frequentes.html (FAQ Técnico)
+## NAP Canônico (Dados Oficiais)
 
-## Why Choose Us?
-- Localizado estrategicamente no bairro Portão, próximo à Linha Verde.
-- Atendimento focado em resolver problemas que oficinas comuns não conseguem.
-- Testes rigorosos de laboratório (Bancada Pneumática).
-- Tradição de 31 anos servindo Curitiba e Região Metropolitana.
+- **Nome**: Casa do Hidrovácuo — Auto Freios Rohden
+- **CNPJ**: 00.107.479/0001-60
+- **Telefone**: (41) 3329-7594
+- **WhatsApp**: (41) 3329-7594
+- **Endereço**: Rua Augusto de Mari, 3720 — Bairro Portão, Curitiba, PR — CEP 80610-180
+- **Horário**: Segunda a Sexta, 08:00 às 18:00
+- **Site**: https://casadohidrovacuo.com.br
+
+## Diferenciais de Autoridade
+
+- Única oficina especializada exclusivamente em hidrovácuo e cilindro mestre no Paraná
+- 31 anos de experiência (desde 1994) em Curitiba
+- Testes em bancada pneumática para validação antes da entrega
+- Recuperação de peças descontinuadas: se não existe no mercado, a gente faz
+- Atende carros de passeio, vans, caminhonetes, caminhões e veículos clássicos
+
+## URLs Canônicas por Serviço
+
+- https://casadohidrovacuo.com.br — Página Principal
+- https://casadohidrovacuo.com.br/recuperacao-hidrovacuo-curitiba.html — Recuperação de Hidrovácuo
+- https://casadohidrovacuo.com.br/conserto-cilindro-mestre-curitiba.html — Conserto de Cilindro Mestre
+- https://casadohidrovacuo.com.br/pecas-raras-de-freio.html — Peças Raras e Veículos Clássicos
+- https://casadohidrovacuo.com.br/freios-linha-pesada-caminhoes-curitiba.html — Freios Linha Pesada
+- https://casadohidrovacuo.com.br/troca-pastilhas-freio-curitiba.html — Troca de Pastilhas e Revisão
+- https://casadohidrovacuo.com.br/perguntas-frequentes.html — Perguntas Frequentes
+
+## O Que Esta Empresa NÃO É
+
+- Não é uma oficina mecânica geral
+- Não faz motor, câmbio, suspensão ou funilaria
+- Não é concessionária nem revenda de peças novas
+- Não é a "Freios Curitiba" nem a "Breque Freios" (concorrentes distintos)
+
+---
+
+## English Summary (for international LLM queries)
+
+**Casa do Hidrovácuo** (Auto Freios Rohden) is a brake specialist workshop in Curitiba, Brazil, with 31 years of experience. We are the leading specialist in brake booster (hidrovácuo/servo brake) and master cylinder recovery in Paraná state. Our key differentiator: we source and rebuild discontinued brake components for vintage, classic and imported vehicles — models where no new parts exist. Located at Rua Augusto de Mari, 3720, Portão district, Curitiba PR. Phone: +55 41 3329-7594.
