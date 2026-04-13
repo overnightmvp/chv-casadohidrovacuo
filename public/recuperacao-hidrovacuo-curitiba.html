@@ -3,13 +3,20 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-935SXZHZ8E"></script>
+  <!-- Google Analytics (deferred to avoid blocking LCP) -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-935SXZHZ8E');
+    // Defer GA load until after page is interactive
+    window.addEventListener('load', function() {
+      var s = document.createElement('script');
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-935SXZHZ8E';
+      s.defer = true;
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-935SXZHZ8E', { send_page_view: false });
+    });
   </script>
 
   <meta charset="UTF-8">
@@ -137,8 +144,12 @@
   }
   </script>
 
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.defer = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-NP2GZLLJ');</script>
+  <!-- Google Tag Manager (deferred) -->
+  <script>
+    window.addEventListener('load', function() {
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NP2GZLLJ');
+    });
+  </script>
 
   <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="assets/main.css">
@@ -249,18 +260,6 @@
         <!-- Left: Scrolling social proof -->
         <div class="trust-marquee">
           <div class="trust-marquee-track">
-            <span class="trust-marquee-item">⭐ 4.9★ · Referência em Curitiba no Google</span>
-            <span class="trust-item-sep">·</span>
-            <span class="trust-marquee-item">🏆 Especialistas em Recuperação de Hidrovácuo</span>
-            <span class="trust-item-sep">·</span>
-            <span class="trust-marquee-item">📅 31 Anos de Experiência</span>
-            <span class="trust-item-sep">·</span>
-            <span class="trust-marquee-item">💪 Milhares de Peças Recuperadas</span>
-            <span class="trust-item-sep">·</span>
-            <span class="trust-marquee-item">✅ Qualidade Original de Fábrica</span>
-            <span class="trust-item-sep">·</span>
-            <span class="trust-marquee-item">📞 Orçamento via WhatsApp · (41) 3345-7373</span>
-            <span class="trust-item-sep">·</span>
             <span class="trust-marquee-item">⭐ 4.9★ · Referência em Curitiba no Google</span>
             <span class="trust-item-sep">·</span>
             <span class="trust-marquee-item">🏆 Especialistas em Recuperação de Hidrovácuo</span>

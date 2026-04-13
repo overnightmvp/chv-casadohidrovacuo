@@ -1,163 +1,153 @@
-/* ===== CASA DO HIDROVÁCUO — DIAGNOSTIC FORM LOGIC ===== */
-
+/* ===== CASA DO HIDROVÁCUO — MAIN JS (performance-optimised) ===== */
 'use strict';
 
-const CONFIG = {
-  PHONE_NUMBER: '554133457373',
-};
+const CONFIG = { PHONE_NUMBER: '554133457373' };
+let state = { selectedService: 'Recuperação de Hidrovácuo' };
 
-let state = {
-  selectedService: 'Recuperação de Hidrovácuo'
-};
+/* ── Defer all init until after first paint ── */
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  // already parsed — schedule after paint to avoid blocking LCP
+  requestAnimationFrame(() => setTimeout(init, 0));
+}
 
-document.addEventListener('DOMContentLoaded', () => {
+function init() {
   initMultiStepForm();
   initPhoneLinks();
   initFAQ();
   initScrollAnimations();
   initAutoHideHeader();
-  trackPageView();
-});
+  // Defer analytics to after page is interactive
+  requestIdleCallback ? requestIdleCallback(trackPageView) : setTimeout(trackPageView, 2000);
+}
 
+/* ── Multi-step form ── */
 function initMultiStepForm() {
   const form = document.getElementById('multistep-form');
   if (!form) return;
 
+  // Cache elements once — avoids repeated querySelectorAll (reflow source)
+  const steps     = Array.from(document.querySelectorAll('.form-step'));
+  const dots      = Array.from(document.querySelectorAll('.step-dot'));
+  const serviceBtns = Array.from(document.querySelectorAll('.service-btn'));
   let currentStep = 1;
 
   function goToStep(n) {
-    // Update step dots
-    document.querySelectorAll('.step-dot').forEach((dot, i) => {
+    // Batch reads before writes to avoid forced reflow
+    dots.forEach((dot, i) => {
       dot.classList.remove('active', 'done');
       if (i + 1 < n)  dot.classList.add('done');
       if (i + 1 === n) dot.classList.add('active');
     });
-    // Show correct step panel
-    document.querySelectorAll('.form-step').forEach(s => s.classList.remove('active'));
-    document.getElementById(`step-${n}`).classList.add('active');
+    steps.forEach(s => s.classList.remove('active'));
+    const target = document.getElementById(`step-${n}`);
+    if (target) target.classList.add('active');
     currentStep = n;
   }
 
-  // Bind service buttons (Hero and Step 1)
-  document.querySelectorAll('.service-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      state.selectedService = btn.textContent.trim();
-      
-      // Update UI active state everywhere
-      document.querySelectorAll('.service-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll(`.service-btn[data-service="${btn.dataset.service}"]`).forEach(b => b.classList.add('active'));
-
-      // If clicked from Hero card, scroll to form and go to Step 2
-      if(btn.closest('#hero-quote-card')) {
-        document.getElementById('get-quote').scrollIntoView({ behavior: 'smooth' });
-        goToStep(2);
-      }
-    });
+  // Event delegation on the form instead of N listeners
+  form.addEventListener('click', (e) => {
+    const btn = e.target.closest('.service-btn');
+    if (!btn) return;
+    e.preventDefault();
+    state.selectedService = btn.textContent.trim();
+    serviceBtns.forEach(b => b.classList.remove('active'));
+    document.querySelectorAll(`.service-btn[data-service="${btn.dataset.service}"]`)
+            .forEach(b => b.classList.add('active'));
+    if (btn.closest('#hero-quote-card')) {
+      document.getElementById('get-quote')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      goToStep(2);
+    }
   });
 
-  // Next/Back buttons
-  document.getElementById('next-1').addEventListener('click', () => goToStep(2));
-  document.getElementById('next-2').addEventListener('click', () => {
-    const vType = document.getElementById('vehicle-type').value;
-    const vModel = document.getElementById('vehicle-model').value;
-    if(!vModel) {
-      document.getElementById('vehicle-model').style.borderColor = 'var(--color-warning)';
+  document.getElementById('next-1')?.addEventListener('click', () => goToStep(2));
+  document.getElementById('next-2')?.addEventListener('click', () => {
+    const vModel = document.getElementById('vehicle-model');
+    if (!vModel?.value) {
+      vModel.style.borderColor = 'var(--color-warning)';
       return;
     }
-    document.getElementById('vehicle-model').style.borderColor = '';
+    vModel.style.borderColor = '';
     goToStep(3);
   });
-  
-  document.getElementById('back-2').addEventListener('click', () => goToStep(1));
-  document.getElementById('back-3').addEventListener('click', () => goToStep(2));
+  document.getElementById('back-2')?.addEventListener('click', () => goToStep(1));
+  document.getElementById('back-3')?.addEventListener('click', () => goToStep(2));
 
-  // Form submit -> WhatsApp
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    
-    const name = document.getElementById('lead-name').value;
-    const phone = document.getElementById('lead-phone').value;
-    const details = document.getElementById('lead-details').value;
-    const vType = document.getElementById('vehicle-type').value;
-    const vModel = document.getElementById('vehicle-model').value;
-
-    if(!name || !phone) {
-      alert("Por favor, preencha o nome e WhatsApp.");
-      return;
-    }
-
-    // Build the WhatsApp Message
+    const name    = document.getElementById('lead-name')?.value;
+    const phone   = document.getElementById('lead-phone')?.value;
+    const details = document.getElementById('lead-details')?.value || '';
+    const vType   = document.getElementById('vehicle-type')?.value || '';
+    const vModel  = document.getElementById('vehicle-model')?.value || '';
+    if (!name || !phone) { alert('Por favor, preencha o nome e WhatsApp.'); return; }
     let text = `Olá! Preciso de um orçamento (Via Site):\n\n`;
     text += `*Serviço:* ${state.selectedService}\n`;
     text += `*Veículo:* ${vType.toUpperCase()} - ${vModel}\n`;
-    text += `*Nome:* ${name}\n`;
-    text += `*Telefone:* ${phone}\n`;
-    
-    if(details.trim()) {
-      text += `\n*Detalhes:* ${details}`;
-    }
-
-    const waLink = `https://wa.me/${CONFIG.PHONE_NUMBER}?text=${encodeURIComponent(text)}`;
-    
-    // Track conversion before redirect
-    trackLead(state.selectedService);
-    
-    // Redirect to WhatsApp
-    window.location.href = waLink;
+    text += `*Nome:* ${name}\n*Telefone:* ${phone}\n`;
+    if (details.trim()) text += `\n*Detalhes:* ${details}`;
+    requestIdleCallback ? requestIdleCallback(() => trackLead(state.selectedService))
+                        : trackLead(state.selectedService);
+    window.location.href = `https://wa.me/${CONFIG.PHONE_NUMBER}?text=${encodeURIComponent(text)}`;
   });
 }
 
+/* ── Phone input mask ── */
 function initPhoneLinks() {
   document.querySelectorAll('input[type="tel"]').forEach(input => {
     input.addEventListener('input', (e) => {
-      let val = e.target.value.replace(/\D/g, '');
-      if (val.length > 11) val = val.slice(0,11);
-      
-      if (val.length >= 11) {
-        val = `(${val.slice(0,2)}) ${val.slice(2,7)}-${val.slice(7,11)}`;
-      } else if (val.length >= 7) {
-        val = `(${val.slice(0,2)}) ${val.slice(2,6)}-${val.slice(6)}`;
-      }
+      let val = e.target.value.replace(/\D/g, '').slice(0, 11);
+      if (val.length >= 11)      val = `(${val.slice(0,2)}) ${val.slice(2,7)}-${val.slice(7,11)}`;
+      else if (val.length >= 7)  val = `(${val.slice(0,2)}) ${val.slice(2,6)}-${val.slice(6)}`;
       e.target.value = val;
     });
   });
 }
 
+/* ── Auto-hide header — fixed reflow: read scrollY once, no intermediate reads ── */
 function initAutoHideHeader() {
   const header = document.querySelector('.site-header');
   if (!header) return;
   let lastScrollY = window.scrollY;
-  let ticking = false;
+  let ticking     = false;
+  let hidden       = false;
+
   function updateHeader() {
-    if (window.scrollY > lastScrollY && window.scrollY > 60) {
-      header.classList.add('header-hidden');
-    } else {
-      header.classList.remove('header-hidden');
+    const y = window.scrollY; // single read
+    const shouldHide = y > lastScrollY && y > 60;
+    if (shouldHide !== hidden) {
+      header.classList.toggle('header-hidden', shouldHide);
+      hidden = shouldHide;
     }
-    lastScrollY = window.scrollY;
+    lastScrollY = y;
     ticking = false;
   }
+
   window.addEventListener('scroll', () => {
-    if (!ticking) { window.requestAnimationFrame(updateHeader); ticking = true; }
+    if (!ticking) { requestAnimationFrame(updateHeader); ticking = true; }
   }, { passive: true });
 }
 
+/* ── FAQ accordion ── */
 function initFAQ() {
-  document.querySelectorAll('.faq-item').forEach(item => {
-    const btn = item.querySelector('.faq-question');
-    if(!btn) return;
-    btn.addEventListener('click', () => {
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!isOpen) item.classList.add('open');
-    });
+  // Event delegation — one listener instead of N
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.faq-question');
+    if (!btn) return;
+    const item   = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
   });
 }
 
+/* ── Scroll reveal — IntersectionObserver (no reflow) ── */
 function initScrollAnimations() {
+  const els = document.querySelectorAll('.fade-up');
+  if (!els.length) return;
   if (!('IntersectionObserver' in window)) {
-    document.querySelectorAll('.fade-up').forEach(el => el.classList.add('visible'));
+    els.forEach(el => el.classList.add('visible'));
     return;
   }
   const observer = new IntersectionObserver((entries) => {
@@ -167,16 +157,16 @@ function initScrollAnimations() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(el => observer.observe(el));
 }
 
+/* ── Analytics (deferred) ── */
 function trackPageView() {
   if (typeof gtag !== 'undefined') {
     gtag('event', 'page_view', { page_title: document.title, page_location: window.location.href });
   }
 }
-
 function trackLead(serviceName) {
   if (typeof gtag !== 'undefined') {
     gtag('event', 'generate_lead', { lead_source: 'whatsapp_form', service: serviceName });
