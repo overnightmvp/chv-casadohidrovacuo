@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
   <!-- Google tag (gtag.js) -->
   <!-- Google Analytics (deferred to avoid blocking LCP) -->
@@ -187,21 +190,56 @@
   }
 }
   </script>
+  <style>
+    .symptom-pill{display:flex;align-items:center;gap:8px;background:#f8f9fa;border:2px solid #e5e7eb;border-radius:50px;padding:10px 16px;font-size:0.9rem;font-weight:600;cursor:pointer;transition:all 0.15s;color:#374151}
+    .symptom-pill:hover{border-color:#c0392b;background:#fff5f5;color:#c0392b}
+    .symptom-pill.selected{border-color:#c0392b;background:#c0392b;color:#fff}
+    .symptom-grid{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+    .urgency-banner{background:linear-gradient(135deg,#7f1d1d,#c0392b);color:white;text-align:center;padding:10px 20px;font-size:0.85rem;font-weight:600}
+    .process-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px}
+    .process-step{text-align:center;position:relative}
+    .process-step:not(:last-child)::after{content:'→';position:absolute;right:-16px;top:20px;font-size:1.5rem;color:#c0392b;font-weight:700}
+    .process-num{width:48px;height:48px;border-radius:50%;background:#c0392b;color:white;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:800;margin:0 auto 16px}
+    .process-step h3{font-size:1rem;font-weight:700;margin-bottom:8px;color:#1a1a2e}
+    .process-step p{font-size:0.9rem;color:#6b7280;line-height:1.6}
+    .objections-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:40px}
+    .objection-card{background:white;border-radius:14px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+    .objection-q{font-size:0.95rem;font-weight:700;color:#1a1a2e;margin-bottom:10px;display:flex;gap:8px}
+    .objection-q::before{content:'"';font-size:1.4rem;color:#c0392b;line-height:1;flex-shrink:0}
+    .objection-a{font-size:0.9rem;color:#4b5563;line-height:1.6}
+    .form-card{background:white;border-radius:20px;box-shadow:0 4px 32px rgba(0,0,0,0.10);padding:40px;max-width:640px;margin:0 auto}
+    .form-header{margin-bottom:28px}
+    .form-header h2{font-size:1.5rem;font-weight:800;color:#1a1a2e;margin-bottom:6px}
+    .form-header p{font-size:0.9rem;color:#6b7280}
+    .form-section-label{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#c0392b;margin-bottom:10px;display:block}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .form-submit-area{margin-top:24px}
+    .form-submit-area .btn{width:100%;justify-content:center;font-size:1.1rem;padding:18px}
+    .form-privacy{font-size:0.78rem;color:#9ca3af;text-align:center;margin-top:12px}
+    .whatsapp-cta{background:#25D366!important;color:white!important}
+    .whatsapp-cta:hover{background:#1da851!important}
+    .proof-bar{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;padding:32px 0;border-bottom:1px solid #e5e7eb}
+    .proof-item{display:flex;align-items:center;gap:10px}
+    .proof-num{font-size:1.6rem;font-weight:800;color:#1a1a2e}
+    .proof-label{font-size:0.8rem;color:#6b7280;line-height:1.3;max-width:90px}
+    .service-links-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:32px}
+    .service-link-card{display:flex;align-items:center;gap:12px;background:white;border:2px solid #e5e7eb;border-radius:12px;padding:16px;text-decoration:none;color:#1a1a2e;font-weight:600;font-size:0.9rem;transition:all 0.15s}
+    .service-link-card:hover{border-color:#c0392b;color:#c0392b;transform:translateY(-1px)}
+    @media(max-width:768px){.process-steps{grid-template-columns:1fr}.process-step::after{display:none}.form-row{grid-template-columns:1fr}.form-card{padding:24px}}
+  </style>
 </head>
 
 <body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NP2GZLLJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NP2GZLLJ" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- ===== URGENCY BANNER ===== -->
+  <div class="urgency-banner">⚠️ Pedal duro ou pesado? Pode ser o hidrovácuo — avalie antes que passe do ponto. &nbsp;·&nbsp; <a href="tel:+554133457373" style="color:white;text-decoration:underline">(41) 3345-7373</a> <span style="opacity:0.8">&nbsp;· Seg–Sex 08h–18h</span></div>
 
   <!-- ===== HEADER ===== -->
   <header class="site-header" role="banner">
     <div class="header-inner">
       <a href="/" class="logo">Casa do <span>Hidrovácuo</span></a>
-      <div class="header-cta">
-        <a href="tel:+554133457373" class="header-phone">📞 (41) 3345-7373</a>
-      </div>
+      <div class="header-cta"><a href="tel:+554133457373" class="header-phone">📞 (41) 3345-7373</a></div>
     </div>
   </header>
 
@@ -211,410 +249,159 @@
     <section class="hero" aria-label="Hero">
       <div class="hero-inner">
         <div class="hero-content">
-          <p class="hero-eyebrow">⭐ Desde 1994 · Especialistas em Freios no Portão</p>
-          <h1 class="headline-hero">Especialistas em<br>Recuperação de Hidrovácuo<br><span
-              style="color:var(--color-accent)">em Curitiba.</span></h1>
-          <p class="hero-sub">Recuperação de <a href="recuperacao-hidrovacuo-curitiba.html"
-              style="color:inherit;text-decoration:underline">servo-freio</a>, <a
-              href="conserto-cilindro-mestre-curitiba.html" style="color:inherit;text-decoration:underline">cilindro
-              mestre</a> e <a href="pecas-raras-de-freio.html" style="color:inherit;text-decoration:underline">peças
-              raras</a>. <strong>Garantia de
-              bancada.</strong><br>
-            Veículos nacionais, importados, antigos e linha pesada.</p>
+          <p class="hero-eyebrow">⭐ Desde 1994 · Especialistas em Hidrovácuo no Portão</p>
+          <h1 class="headline-hero">Recuperação de Hidrovácuo<br><span style="color:var(--color-accent)">em Curitiba.</span> Pedal leve de volta.</h1>
+          <p class="hero-sub">Remanufatura completa do <strong>servo-freio (hidrovácuo)</strong> mantendo a carcaça original de fábrica. Até 60% mais barato que peça nova. Teste em bancada pneumática e garantia inclusa.</p>
           <div class="hero-ctas">
-            <a href="#get-quote" class="btn btn-primary btn-primary-xl" style="width:auto">Fazer Diagnóstico 🚗</a>
-            <a href="tel:+554133457373" class="btn btn-ghost"><span class="btn-emoji">📞</span> Ligar (41) 3345-7373</a>
+            <a href="#diagnostico" class="btn btn-primary btn-primary-xl" style="width:auto">Descrever o Problema 💬</a>
+            <a href="tel:+554133457373" class="btn btn-ghost"><span class="btn-emoji">📞</span> Ligar Agora</a>
           </div>
-          <div class="trust-row" style="justify-content:center; text-align:center">
-            <span class="trust-item">✅ 31 Anos de Tradição</span>
+          <div class="trust-row" style="justify-content:center;text-align:center;margin-top:20px">
+            <span class="trust-item">✅ 31 Anos no Portão</span>
             <span class="trust-item">✅ Teste em Bancada</span>
-            <span class="trust-item">✅ Peças Raras e Clássicos</span>
-            <span class="trust-item">✅ Avaliação Rápida</span>
+            <span class="trust-item">✅ Garantia Inclusa</span>
+            <span class="trust-item">✅ Resposta em 2h</span>
           </div>
-          <p
-            style="font-size:0.85rem; color:rgba(255,255,255,0.7); text-align:center; margin-top:12px; margin-bottom:0">
-            Atendendo Curitiba e Região Metropolitana — Rua Augusto de Mari, 3720, Portão
-          </p>
         </div>
-
-        <!-- Hero Quick Quote Card (Replaced with Multi-Step Intro) -->
-        <div class="hero-card" id="hero-quote-card">
-          <p class="hero-card-title">Diagnóstico Express</p>
-          <div class="service-select">
-            <label>Qual o serviço necessário?</label>
-            <div class="service-options" style="display:flex; flex-direction:column; gap:10px;">
-              <button class="service-btn" data-service="hidrovacuo">Recuperação de Hidrovácuo</button>
-              <button class="service-btn" data-service="cilindro">Cilindro Mestre</button>
-              <button class="service-btn" data-service="peca_rara">Peça Rara/Antiga</button>
-              <button class="service-btn" data-service="outro">Outro Freio</button>
-            </div>
+        <div class="hero-card">
+          <p class="hero-card-title">🔍 Qual sintoma você está tendo?</p>
+          <div class="symptom-grid">
+            <button class="symptom-pill selected" data-symptom="Pedal duro">🦵 Pedal duro</button><button class="symptom-pill" data-symptom="Pedal mole">💧 Pedal mole</button><button class="symptom-pill" data-symptom="Chiado ao frear">🔊 Chiado ao frear</button><button class="symptom-pill" data-symptom="Vazamento">🛢️ Vazamento</button><button class="symptom-pill" data-symptom="Peça rara">🏛️ Peça rara</button><button class="symptom-pill" data-symptom="Vibração">📳 Vibração</button>
           </div>
-          <a href="#get-quote" class="btn btn-primary" style="width:100%; margin-top:20px;">Continuar Diagnóstico ➔</a>
+          <a href="#diagnostico" class="btn btn-primary" style="width:100%;margin-top:12px">Ver Orçamento no WhatsApp 💬</a>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.6);text-align:center;margin-top:8px">Resposta em até 2h no horário comercial</p>
         </div>
       </div>
     </section>
 
-    <!-- ===== TRBRT BAR ===== -->
-    <div class="trust-bar" role="complementary" aria-label="Trust indicators">
+    <!-- ===== TRUST BAR ===== -->
+    <div class="trust-bar" role="complementary">
       <div class="trust-bar-inner">
-        <!-- Left: Scrolling social proof -->
-        <div class="trust-marquee">
-          <div class="trust-marquee-track">
-            <span class="trust-marquee-item">⭐ 4.9★ · Referência em Curitiba no Google</span>
-            <span class="trust-item-sep">·</span>
-            <span class="trust-marquee-item">🏆 Especialistas em Recuperação de Hidrovácuo</span>
-            <span class="trust-item-sep">·</span>
-            <span class="trust-marquee-item">📅 31 Anos de Experiência</span>
-            <span class="trust-item-sep">·</span>
-            <span class="trust-marquee-item">💪 Milhares de Peças Recuperadas</span>
-            <span class="trust-item-sep">·</span>
-            <span class="trust-marquee-item">✅ Qualidade Original de Fábrica</span>
-            <span class="trust-item-sep">·</span>
-            <span class="trust-marquee-item">📞 Orçamento via WhatsApp · (41) 3345-7373</span>
-            <span class="trust-item-sep">·</span>
-          </div>
-        </div>
-
-        <!-- Right: Persistent CTAs (desktop only) -->
+        <div class="trust-marquee"><div class="trust-marquee-track">
+          <span class="trust-marquee-item">⭐ 4.9★ · Referência em Curitiba no Google</span><span class="trust-item-sep">·</span>
+          <span class="trust-marquee-item">🏆 Especialistas em Freios — 31 Anos</span><span class="trust-item-sep">·</span>
+          <span class="trust-marquee-item">💪 15.000+ Peças Recuperadas</span><span class="trust-item-sep">·</span>
+          <span class="trust-marquee-item">✅ Garantia de Bancada em Todos os Serviços</span><span class="trust-item-sep">·</span>
+          <span class="trust-marquee-item">📞 WhatsApp (41) 3345-7373</span><span class="trust-item-sep">·</span>
+        </div></div>
         <div class="trust-bar-ctas">
-          <a href="tel:+554133457373" class="trust-cta-call">
-            <span class="cta-icon">📞</span>
-            <span class="cta-text">Ligar Agora</span>
-          </a>
-          <a href="#get-quote" class="trust-cta-quote">
-            <span class="cta-icon">🚚</span>
-            <span class="cta-text">Fazer Diagnóstico</span>
-          </a>
+          <a href="tel:+554133457373" class="trust-cta-call"><span class="cta-icon">📞</span><span class="cta-text">Ligar Agora</span></a>
+          <a href="#diagnostico" class="trust-cta-quote"><span class="cta-icon">💬</span><span class="cta-text">WhatsApp</span></a>
         </div>
       </div>
     </div>
 
-    <!-- ===== MULTI-STEP DIAGNOSTIC FORM ===== -->
-    <section class="section" id="get-quote" style="background:white">
+    <!-- ===== PROOF BAR ===== -->
+    <section class="section-sm" style="background:white;border-bottom:1px solid #f1f5f9">
       <div class="container">
-        <div class="section-title fade-up">
-          <span class="label">Orçamento Rápido</span>
-          <h2 class="headline-section">Diagnóstico de Freios</h2>
-          <p>Responda 3 perguntas para falarmos o preço exato no seu WhatsApp.</p>
+        <div class="proof-bar fade-up">
+          <div class="proof-item"><div class="proof-num"><span style="color:#f59e0b">★</span> 4.9</div><div class="proof-label">Avaliação no Google</div></div>
+          <div class="proof-item"><div class="proof-num">247+</div><div class="proof-label">Clientes avaliaram</div></div>
+          <div class="proof-item"><div class="proof-num">31</div><div class="proof-label">Anos no Portão</div></div>
+          <div class="proof-item"><div class="proof-num">15K+</div><div class="proof-label">Peças recuperadas</div></div>
+          <div class="proof-item"><div class="proof-num">60%</div><div class="proof-label">Economia vs peça nova</div></div>
         </div>
+      </div>
+    </section>
 
-        <div class="multistep-wrap fade-up" style="max-width: 600px; margin: 0 auto;">
-          <div class="step-progress">
-            <div class="step-dot active">1</div>
-            <div class="step-line"></div>
-            <div class="step-dot">2</div>
-            <div class="step-line"></div>
-            <div class="step-dot">3</div>
-          </div>
+    <!-- ===== AVALIAÇÕES ===== -->
+    <section class="section section-alt" id="avaliacoes">
+      <div class="container">
+        <div class="section-title fade-up"><span class="label">4.9 ★ no Google</span><h2 class="headline-section">Quem já freou com a gente</h2></div>
+        <div class="reviews-grid fade-up">
+          <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Meu pedal estava muito duro e o mecânico queria trocar tudo. Vim na Casa do Hidrovácuo e eles recuperaram minha peça original por menos da metade do preço. Saí no mesmo dia."</p><div class="review-author"><span class="author-name">Roberto S. — Água Verde, Curitiba</span><span class="review-badge">✓ Cliente verificado</span></div></div>
+          <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Os únicos em Curitiba que conseguiram salvar o cilindro mestre do meu Galaxie 500. Fizeram o embuchamento perfeito, mantendo a originalidade. Recomendo de olhos fechados."</p><div class="review-author"><span class="author-name">Carlos A. — São José dos Pinhais</span><span class="review-badge">✓ Cliente verificado</span></div></div>
+          <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Deixei o carro de manhã e no mesmo dia estava pronto. Freio ficou super leve e confiável. Pessoal com 30+ anos de experiência faz toda a diferença."</p><div class="review-author"><span class="author-name">Marcos C. — Fazenda Rio Grande</span><span class="review-badge">✓ Cliente verificado</span></div></div>
+        </div>
+      </div>
+    </section>
 
-          <form id="multistep-form">
-            <!-- STEP 1: Service -->
-            <div class="form-step active" id="step-1">
-              <h3 class="step-title" style="color:var(--color-primary)">1. O que você precisa?</h3>
-              <p class="step-subtitle" style="color:var(--color-text-muted)">Selecione o serviço principal.</p>
-
-              <div class="form-field">
-                <div class="service-options" style="display:flex; flex-direction:column; gap:12px;">
-                  <button type="button" class="service-btn active" data-service="hidrovacuo">Recuperação de
-                    Hidrovácuo</button>
-                  <button type="button" class="service-btn" data-service="cilindro">Recuperação de Cilindro
-                    Mestre</button>
-                  <button type="button" class="service-btn" data-service="peca_rara">Busca de Peça
-                    Rara/Antiga</button>
-                  <button type="button" class="service-btn" data-service="manutencao">Manutenção Geral de
-                    Freios</button>
+    <!-- ===== FORMULÁRIO DE DIAGNÓSTICO ===== -->
+    <section class="section" id="diagnostico" style="background:linear-gradient(135deg,#1a1a2e 0%,#2d1b1b 100%)">
+      <div class="container">
+        <div class="section-title fade-up" style="color:white">
+          <span class="label" style="color:#f87171">Orçamento Rápido</span>
+          <h2 class="headline-section" style="color:white">Descreva o problema — respondemos em até 2h</h2>
+          <p style="color:rgba(255,255,255,0.7)">Quanto mais detalhe você der, mais preciso será o orçamento no WhatsApp.</p>
+        </div>
+        <div class="form-card fade-up">
+          <div class="form-header"><h2>Diagnóstico do seu freio</h2><p>Preencha abaixo e receba o orçamento direto no WhatsApp — sem enrolação.</p></div>
+          <form id="diagnostico-form">
+            <div style="margin-bottom:24px">
+              <span class="form-section-label">1. O que você está sentindo?</span>
+              <div class="symptom-grid" id="symptom-selector"><button type="button" class="symptom-pill selected" data-symptom="Pedal duro ou pesado">🦵 Pedal duro ou pesado</button>
+                <button type="button" class="symptom-pill" data-symptom="Pedal mole / vai ao fundo">💧 Pedal mole / vai ao fundo</button>
+                <button type="button" class="symptom-pill" data-symptom="Chiado ao frear">🔊 Chiado ao frear</button>
+                <button type="button" class="symptom-pill" data-symptom="Vazamento de fluido">🛢️ Vazamento de fluido</button>
+                <button type="button" class="symptom-pill" data-symptom="Peça rara / carro antigo">🏛️ Peça rara / carro antigo</button>
+                <button type="button" class="symptom-pill" data-symptom="Vibração ao frear">📳 Vibração ao frear</button>
+                <button type="button" class="symptom-pill" data-symptom="Luz de freio no painel">🔴 Luz de freio no painel</button>
+                <button type="button" class="symptom-pill" data-symptom="Carro puxa de lado">↗️ Carro puxa de lado</button>
                 </div>
-              </div>
-
-              <button type="button" class="btn btn-primary btn-primary-xl" id="next-1"
-                style="width:100%; margin-top:24px;">Próximo Passo ➔</button>
+              <input type="text" id="symptom-other-input" class="form-input" placeholder="Outro sintoma — descreva aqui..." style="font-size:0.9rem;padding:12px 16px;margin-top:10px">
             </div>
-
-            <!-- STEP 2: Vehicle -->
-            <div class="form-step" id="step-2">
-              <h3 class="step-title" style="color:var(--color-primary)">2. Qual o seu veículo?</h3>
-              <p class="step-subtitle" style="color:var(--color-text-muted)">Para consultarmos a peça correta no
-                estoque.</p>
-
-              <div class="form-field">
-                <label class="form-label">Tipo de Veículo</label>
-                <select id="vehicle-type" class="form-select" required style="margin-bottom:16px;">
-                  <option value="carro">Carro de Passeio</option>
-                  <option value="caminhonete">Caminhonete / Van</option>
-                  <option value="caminhao">Caminhão / Pesado</option>
-                  <option value="antigo">Veículo Clássico / Antigo</option>
-                </select>
-
-                <label class="form-label">Qual o Modelo e Ano?</label>
-                <input type="text" id="vehicle-model" class="form-input"
-                  placeholder="Ex: F1000 Ano 1994, Galaxie 500, etc." required>
-              </div>
-
-              <div class="step-nav" style="display:flex; gap:16px; margin-top:24px;">
-                <button type="button" class="btn btn-secondary" id="back-2" style="flex:1;">⬅ Voltar</button>
-                <button type="button" class="btn btn-primary btn-primary-xl" id="next-2" style="flex:2;">Próximo Passo
-                  ➔</button>
+            <div style="margin-bottom:24px">
+              <span class="form-section-label">2. Seu veículo</span>
+              <div class="form-row">
+                <div class="form-field" style="margin-bottom:0"><label class="form-label">Tipo</label>
+                  <select id="vehicle-type" class="form-select">
+                    <option>🚗 Carro de passeio</option><option>🛻 Caminhonete</option><option>🚐 Van / Furgão</option><option>🚛 Caminhão</option><option>🏛️ Clássico / antigo</option><option>🌍 Importado</option>
+                  </select></div>
+                <div class="form-field" style="margin-bottom:0"><label class="form-label">Modelo e Ano *</label><input type="text" id="vehicle-model" class="form-input" placeholder="Ex: Gol 2010, Hilux..." required></div>
               </div>
             </div>
-
-            <!-- STEP 3: Contact -->
-            <div class="form-step" id="step-3">
-              <h3 class="step-title" style="color:var(--color-primary)">3. Pra onde enviamos o orçamento?</h3>
-              <p class="step-subtitle" style="color:var(--color-text-muted)">Nossa equipe técnica vai analisar e te
-                chamar no WhatsApp.</p>
-
-              <div class="form-field">
-                <label class="form-label">Seu Nome *</label>
-                <input type="text" id="lead-name" class="form-input" placeholder="João da Silva" required>
+            <div style="margin-bottom:24px">
+              <span class="form-section-label">3. Urgência</span>
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <button type="button" class="symptom-pill" data-urgency="emergencia" style="font-size:0.85rem">🚨 Urgente — carro parado</button>
+                <button type="button" class="symptom-pill" data-urgency="esta_semana" style="font-size:0.85rem">📅 Esta semana</button>
+                <button type="button" class="symptom-pill" data-urgency="pesquisando" style="font-size:0.85rem">🔍 Pesquisando preços</button>
               </div>
-              <div class="form-field">
-                <label class="form-label">Seu WhatsApp *</label>
-                <input type="tel" id="lead-phone" class="form-input" placeholder="(41) 99999-9999" required>
+            </div>
+            <div style="margin-bottom:8px">
+              <span class="form-section-label">4. Para onde enviamos o orçamento?</span>
+              <div class="form-row" style="margin-bottom:16px">
+                <div class="form-field" style="margin-bottom:0"><label class="form-label">Seu nome *</label><input type="text" id="lead-name" class="form-input" placeholder="João Silva" required></div>
+                <div class="form-field" style="margin-bottom:0"><label class="form-label">WhatsApp *</label><input type="tel" id="lead-phone" class="form-input" placeholder="(41) 9 9999-9999" required></div>
               </div>
-              <div class="form-field">
-                <label class="form-label">Detalhes Adicionais (Opcional)</label>
-                <textarea id="lead-details" class="form-input" rows="3"
-                  placeholder="O pedal está duro? Vazamento de óleo? Relate aqui..."></textarea>
-              </div>
-
-              <div class="step-nav" style="display:flex; gap:16px; margin-top:24px;">
-                <button type="button" class="btn btn-secondary" id="back-3" style="flex:1;">⬅ Voltar</button>
-                <button type="submit" class="btn btn-primary btn-primary-xl" id="submit-btn" style="flex:2;">Falar no
-                  WhatsApp 💬</button>
-              </div>
+              <div class="form-field"><label class="form-label">Detalhes extras (opcional)</label><textarea id="lead-details" class="form-input" rows="2" placeholder="Há quanto tempo? Já foi em outra oficina? Tem foto da peça?"></textarea></div>
+            </div>
+            <div class="form-submit-area">
+              <button type="submit" class="btn btn-primary whatsapp-cta">💬 Enviar para WhatsApp e Receber Orçamento</button>
+              <p class="form-privacy">🔒 Seus dados não são compartilhados. Respondemos em até 2h no horário comercial.</p>
             </div>
           </form>
-
         </div>
       </div>
     </section>
 
-    <!-- ===== HOW IT WORKS ===== -->
-    <section class="section" id="how-it-works">
+    <!-- ===== QUEBRA DE OBJEÇÕES ===== -->
+    <section class="section section-alt" id="por-que-nos">
       <div class="container">
-        <div class="section-title fade-up">
-          <span class="label">Processo Simples</span>
-          <h2 class="headline-section">Como Funciona</h2>
-          <p>Três passos para consertar o freio do seu veículo com segurança.</p>
-        </div>
-        <div class="steps-grid">
-          <div class="step-card fade-up">
-            <div class="step-card-header">
-              <div class="step-icon">📋</div>
-              <div class="step-number">1</div>
-            </div>
-            <h3>Diagnóstico Online</h3>
-            <p>Preencha nosso formulário em 60 segundos. Sabemos como é difícil ficar sem carro no trânsito e vias
-              rápidas de Curitiba, então respondemos rapidamente com o orçamento.</p>
+        <div class="section-title fade-up"><span class="label">Suas dúvidas, respondidas</span><h2 class="headline-section">Por que escolher a Casa do Hidrovácuo?</h2><p>Entendemos que você tem opções. Aqui está o que nos diferencia — sem jargão de marketing.</p></div>
+        <div class="objections-grid fade-up"><div class="objection-card"><div class="objection-q">Meu mecânico disse que tem que trocar o hidrovácuo inteiro.</div><div class="objection-a">Na maioria dos casos, não precisa. Recuperamos a carcaça original de fábrica (Bosch, Bendix, TRW) — de qualidade superior às peças paralelas. Avaliamos gratuitamente antes de qualquer decisão.</div></div>
+          <div class="objection-card"><div class="objection-q">Tenho medo de que o pedal volte a ficar duro depois.</div><div class="objection-a">Todo hidrovácuo recuperado passa por teste em bancada pneumática — simulamos dezenas de frenagens extremas. Se não aprovado, refazemos. Garantia inclusa no serviço.</div></div>
+          <div class="objection-card"><div class="objection-q">Quanto tempo fica meu carro parado?</div><div class="objection-a">Para veículos populares, o processo é feito no dia. Você pode trazer só o hidrovácuo desmontado sem deixar o carro. Para peças raras, informamos o prazo após avaliação.</div></div>
+          <div class="objection-card"><div class="objection-q">É mais barato comprar peça nova?</div><div class="objection-a">Raramente. A peça nova paralela custa mais e é fabricada com materiais inferiores à carcaça original. A recuperação mantém a qualidade original por 40 a 60% menos.</div></div>
+          <div class="objection-card"><div class="objection-q">Vocês atendem meu modelo de carro?</div><div class="objection-a">Atendemos todos os modelos nacionais, importados, caminhonetes, vans, caminhões e clássicos. Se não existe peça nova no mercado, fazemos o embuchamento.</div></div>
+          <div class="objection-card"><div class="objection-q">Posso trazer só a peça sem o carro?</div><div class="objection-a">Sim! Se seu mecânico já fez a desmontagem, traga apenas o hidrovácuo. Recuperamos e devolvemos pronto para reinstalar — testado e com garantia.</div></div>
           </div>
-          <div class="step-card fade-up">
-            <div class="step-card-header">
-              <div class="step-icon">🛠️</div>
-              <div class="step-number">2</div>
-            </div>
-            <h3>Avaliação Técnica</h3>
-            <p>Traga a peça ou o veículo até nossa oficina no Bairro Portão (Rua Augusto de Mari). Desmontamos o
-              hidrovácuo ou cilindro para análise detalhada.</p>
-          </div>
-          <div class="step-card fade-up">
-            <div class="step-card-header">
-              <div class="step-icon">✅</div>
-              <div class="step-number">3</div>
-            </div>
-            <h3>Garantia e Segurança</h3>
-            <p>Trocamos todos os reparos e testamos na bancada pneumática. Você sai com seu freio macio e segurança
-              total para encarar as chuvas constantes e ladeiras de Curitiba.</p>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- ===== WHY CHOOSE US ===== -->
-    <section class="section" id="why-labor-only">
+    <!-- ===== COMO FUNCIONA ===== -->
+    <section class="section" style="background:white" id="como-funciona">
       <div class="container">
-        <div class="section-title fade-up">
-          <span class="label">Economize até 60%</span>
-          <h2 class="headline-section">Por que recuperar em vez de comprar novo?</h2>
-          <p>Muitas oficinas condenam a peça inteira. Nós sabemos como recuperar e manter a originalidade.</p>
+        <div class="section-title fade-up"><span class="label">Processo simples</span><h2 class="headline-section">Do diagnóstico ao freio funcionando</h2><p>Três passos. Sem surpresa, sem enrolação.</p></div>
+        <div class="process-steps fade-up">
+          <div class="process-step"><div class="process-num">1</div><h3>Descreva o sintoma</h3><p>Preencha o formulário acima ou ligue para <a href="tel:+554133457373" style="color:#c0392b">(41) 3345-7373</a>. Orçamento em até 2h.</p></div>
+          <div class="process-step"><div class="process-num">2</div><h3>Traga a peça ou o carro</h3><p>Rua Augusto de Mari, 3720, Portão. Pode trazer só o hidrovácuo desmontado — não precisa deixar o carro todo.</p></div>
+          <div class="process-step"><div class="process-num">3</div><h3>Retira aprovado em bancada</h3><p>Teste pneumático obrigatório. Sai com garantia e freio seguro.</p></div>
         </div>
-
-        <div class="benefits-grid fade-up">
-          <div class="benefit-card">
-            <div class="benefit-icon">💰</div>
-            <div>
-              <h3>Economia Real</h3>
-              <p>A rotina anda-e-para no trajeto Centro-Batel desgasta muito o freio. Evite concessionárias caras: nossa
-                recuperação mantém o padrão de fábrica por uma fração do preço.</p>
-            </div>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-icon">⚙️</div>
-            <div>
-              <h3>Teste de Bancada</h3>
-              <p>Toda peça que recuperamos passa por um rigoroso teste de pressão e estanqueidade na bancada antes de
-                ser instalada.</p>
-            </div>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-icon">🚗</div>
-            <div>
-              <h3>Especialistas em Clássicos</h3>
-              <p>Não encontra peça para o seu Galaxie ou Opala? Nós recondicionamos e fabricamos peças sob medida
-                (embuchamento) para clássicos.</p>
-            </div>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-icon">📅</div>
-            <div>
-              <h3>Tradição de 31 Anos</h3>
-              <p>Desde 1994 no bairro Portão (Auto Freios Rohden), atendendo moradores do Água Verde à CIC. Milhares de
-                curitibanos já frearam com segurança graças à nossa oficina.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="fade-up" style="margin-top:48px;overflow-x:auto">
-          <table class="compare-table" role="table" aria-label="Comparativo de Serviços">
-            <thead>
-              <tr>
-                <th>O que você recebe</th>
-                <th class="highlight">Casa do Hidrovácuo</th>
-                <th>Oficina Comum</th>
-                <th>Concessionária</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Mantém carcaça original</td>
-                <td class="highlight"><span class="check-green">✓</span> Sim</td>
-                <td><span class="check-red">✗</span> Troca tudo</td>
-                <td><span class="check-red">✗</span> Troca tudo</td>
-              </tr>
-              <tr>
-                <td>Teste de Retenção de Vácuo</td>
-                <td class="highlight"><span class="check-green">✓</span> Incluso</td>
-                <td><span class="check-red">✗</span> Raro</td>
-                <td><span class="check-green">✓</span> Incluso</td>
-              </tr>
-              <tr>
-                <td>Atende Peças Raras/Clássicos</td>
-                <td class="highlight"><span class="check-green">✓</span> Especialistas</td>
-                <td><span class="check-red">✗</span> Não fazem</td>
-                <td><span class="check-red">✗</span> Sem peças</td>
-              </tr>
-              <tr>
-                <td>Custo Médio</td>
-                <td class="highlight" style="font-weight:800;color:#1e3a8a">$$-$$$</td>
-                <td>$$$$</td>
-                <td>$$$$$</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <div style="text-align:center;margin-top:40px"><a href="#diagnostico" class="btn btn-primary btn-primary-xl">Solicitar Orçamento Agora →</a></div>
       </div>
     </section>
-
-    <!-- ===== SOCIAL PROOF ===== -->
-    <section class="section section-alt" id="reviews">
-      <div class="container">
-        <div class="section-title fade-up">
-          <span class="label">Tradição e Qualidade</span>
-          <h2 class="headline-section">O que nossos clientes dizem</h2>
-        </div>
-
-        <div class="stats-bar fade-up" style="margin-top:40px">
-          <div class="stat">
-            <div class="stat-number"><span style="color:#f59e0b">★</span> 4.9</div>
-            <div class="stat-label">Avaliação Google</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">31+</div>
-            <div class="stat-label">Anos de Experiência</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">15K+</div>
-            <div class="stat-label">Peças Recuperadas</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Garantia de Bancada</div>
-          </div>
-        </div>
-
-        <div class="reviews-grid fade-up">
-          <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Excelente atendimento. Meu pedal estava muito duro e o mecânico queria trocar tudo.
-              Trouxe aqui na Casa do Hidrovácuo e eles recuperaram a minha peça original por menos da metade do preço."
-            </p>
-            <div class="review-author">
-              <span class="author-name">Roberto S. — Curitiba</span>
-              <span class="review-badge">✓ Cliente Satisfeito</span>
-            </div>
-          </div>
-          <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Os únicos em Curitiba que conseguiram salvar o cilindro mestre do meu Galaxie 500.
-              Fizeram o embuchamento e ficou perfeito, mantendo a originalidade do carro. Recomendo de olhos fechados."
-            </p>
-            <div class="review-author">
-              <span class="author-name">Carlos A. — São José dos Pinhais</span>
-              <span class="review-badge">✓ Cliente Satisfeito</span>
-            </div>
-          </div>
-          <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Serviço rápido e com muita técnica. Deixei o carro de manhã e no mesmo dia estava
-              pronto. O freio ficou super leve e confiável. Pessoal com mais de 30 anos de experiência faz a diferença."
-            </p>
-            <div class="review-author">
-              <span class="author-name">Marcos C. — Fazenda Rio Grande</span>
-              <span class="review-badge">✓ Cliente Satisfeito</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SPECIALTY SERVICES ===== -->
-    <section class="section" id="servicos">
-      <div class="container">
-        <div class="section-title fade-up">
-          <span class="label">Especialidades</span>
-          <h2 class="headline-section">Nossos Serviços</h2>
-          <p>Soluções completas em freios para carros, vans e veículos antigos no Paraná.</p>
-        </div>
-
-        <div class="areas-grid fade-up">
-          <a href="/recuperacao-hidrovacuo-curitiba.html" class="area-card">
-            <div class="area-icon">�</div>
-            <div>
-              <div class="area-name">Recuperação de Hidrovácuo</div>
-              <div class="area-dist">Conserto e remanufatura garantida</div>
-            </div>
-            <span class="area-arrow">→</span>
-          </a>
-          <a href="/pecas-raras-de-freio.html" class="area-card">
-            <div class="area-icon">�</div>
-            <div>
-              <div class="area-name">Peças Raras e Clássicos</div>
-              <div class="area-dist">Restauração de freios antigos</div>
-            </div>
-            <span class="area-arrow">→</span>
-          </a>
-          <div class="area-card" style="cursor:default">
-            <div class="area-icon">⚙️</div>
-            <div>
-              <div class="area-name">Cilindro Mestre</div>
-              <div class="area-dist">Recondicionamento especializado</div>
-            </div>
-            <span class="area-arrow" style="opacity:0"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== FAQ ===== -->
+<!-- ===== FAQ ===== -->
     <section class="section section-alt" id="faq">
       <div class="container">
         <div class="section-title fade-up">
@@ -685,9 +472,7 @@
         </div>
       </div>
     </section>
-
-    
-    <!-- ===== SEO CONTENT BLOCK — RECUPERAÇÃO DE HIDROVÁCUO ===== -->
+<!-- ===== SEO CONTENT BLOCK — RECUPERAÇÃO DE HIDROVÁCUO ===== -->
     <section class="section" id="guia-hidrovacuo" style="background:#fff">
       <div class="container">
 
@@ -760,9 +545,7 @@
         </div>
       </div>
     </section>
-
-
-    <!-- ===== AUTHORITY LINKS ===== -->
+<!-- ===== AUTHORITY LINKS ===== -->
     <section class="section section-alt" id="recursos-autoridade">
       <div class="container">
         <div class="section-title fade-up">
@@ -799,6 +582,19 @@
       </div>
     </section>
 
+    <!-- ===== OUTROS SERVIÇOS ===== -->
+    <section class="section section-alt" id="outros-servicos">
+      <div class="container">
+        <div class="section-title fade-up"><span class="label">Veja também</span><h2 class="headline-section" style="font-size:1.8rem">Outros serviços de freio</h2></div>
+        <div class="service-links-grid fade-up"><a href="/conserto-cilindro-mestre-curitiba.html" class="service-link-card"><span style="font-size:1.4rem">⚙️</span><div><div style="font-weight:700">Cilindro Mestre</div><div style="font-size:0.8rem;color:#6b7280;font-weight:400">Pedal mole ou vazamento</div></div></a>
+          <a href="/pecas-raras-de-freio.html" class="service-link-card"><span style="font-size:1.4rem">🏛️</span><div><div style="font-weight:700">Peças Raras</div><div style="font-size:0.8rem;color:#6b7280;font-weight:400">Clássicos e importados</div></div></a>
+          <a href="/freios-linha-pesada-caminhoes-curitiba.html" class="service-link-card"><span style="font-size:1.4rem">🚛</span><div><div style="font-weight:700">Linha Pesada</div><div style="font-size:0.8rem;color:#6b7280;font-weight:400">Caminhões e frotas</div></div></a>
+          <a href="/troca-pastilhas-freio-curitiba.html" class="service-link-card"><span style="font-size:1.4rem">🛞</span><div><div style="font-weight:700">Pastilhas</div><div style="font-size:0.8rem;color:#6b7280;font-weight:400">Revisão completa do sistema</div></div></a>
+          </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
     <!-- ===== FOOTER ===== -->
     <footer class="site-footer" role="contentinfo">
       <div class="container">
@@ -856,4 +652,9 @@
   </main>
 </body>
 
+</html>
+
+    <script src="assets/main.js" defer></script>
+  </main>
+</body>
 </html>
