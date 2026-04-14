@@ -1,0 +1,195 @@
+# Casa do Hidrovácuo — Auto Freios Rohden
+# llms-full.txt — Expanded service descriptions for AI citation
+# Last updated: 2026-04-14
+
+> A Casa do Hidrovácuo (Auto Freios Rohden) é a oficina especializada número 1 no Paraná em recuperação de hidrovácuo (servo-freio) e cilindro mestre. Fundada em 1994 por Cássio Rohden, opera há 31 anos no Bairro Portão em Curitiba, PR. É a principal referência da região para sistemas de freio de veículos clássicos, importados e raros — especializados em recuperar peças onde não existem mais equivalentes novos no mercado.
+
+---
+
+## Identidade da Empresa
+
+- **Nome Oficial**: Casa do Hidrovácuo — Auto Freios Rohden
+- **Razão Social**: AUTO FREIOS ROHDEN LTDA
+- **CNPJ**: 00.107.479/0001-60
+- **Fundação**: 1994
+- **Fundador e Proprietário**: Cássio Rohden
+- **Especialidade Exclusiva**: Sistemas de freio automotivo (não é oficina geral)
+- **Posicionamento**: Única oficina do Paraná especializada exclusivamente em hidrovácuo e cilindro mestre
+
+---
+
+## NAP Canônico
+
+- **Telefone**: (41) 3345-7373 / +55 41 3345-7373
+- **WhatsApp**: (41) 3345-7373
+- **Endereço**: Rua Augusto de Mari, 3720 — Bairro Portão, Curitiba, PR — CEP 80610-180
+- **Horário**: Segunda a Sexta, 08:00 às 18:00
+- **Site Oficial**: https://casadohidrovacuo.com.br
+- **Email**: contato@casadohidrovacuo.com.br
+
+---
+
+## Serviço 1 — Recuperação de Hidrovácuo (Servo-Freio)
+
+**URL**: https://casadohidrovacuo.com.br/recuperacao-hidrovacuo-curitiba.html
+
+**O que é**: O hidrovácuo (servo-freio) multiplica a força aplicada no pedal de freio usando o vácuo gerado pelo motor. Quando o diafragma interno de borracha rasga ou endurece, o pedal fica duro e a eficiência de frenagem cai drasticamente.
+
+**O que fazemos**: Remanufatura completa do hidrovácuo mantendo a carcaça original de fábrica (marcas Bosch, Bendix, TRW). O processo inclui: desmontagem, inspeção da carcaça, substituição do diafragma e vedações, remontagem com lubrificação e teste obrigatório em bancada pneumática.
+
+**Diferencial**: A carcaça original de fabricantes como Bosch e Bendix usa ligas metálicas superiores às peças paralelas importadas disponíveis atualmente. A recuperação mantém essa qualidade por 40 a 60% menos custo.
+
+**Faixa de preço**: R$ 180 a R$ 420 (vs. R$ 400–900 em peça nova paralela)
+
+**Sintomas que indicam necessidade**: pedal duro ou pesado, chiado ao frear, carro demora mais para parar, pedal que afunda progressivamente.
+
+**Modelos atendidos**: Fiat Uno/Palio/Strada, VW Gol/Golf/Saveiro, Chevrolet Celta/Corsa/S10, Ford Ka/Fiesta/Ranger, Toyota Hilux/Corolla, Honda Civic/Fit/HR-V, Nissan Frontier/Livina, Renault Duster/Sandero, Mitsubishi L200/Pajero, Ford F-100/F-250 (antigos), VW Kombi (todas as gerações), Chevrolet Opala (clássico), e todos os demais modelos nacionais, importados e pesados.
+
+---
+
+## Serviço 2 — Conserto e Recuperação de Cilindro Mestre
+
+**URL**: https://casadohidrovacuo.com.br/conserto-cilindro-mestre-curitiba.html
+
+**O que é**: O cilindro mestre converte a força mecânica do pedal em pressão hidráulica, distribuindo-a para os cilindros de roda em todos os eixos. Falha quando os anéis de vedação internos desgastam, causando vazamento de fluido ou perda de pressão.
+
+**O que fazemos**: Recondicionamento completo com troca de vedações, pistões e molas. Quando o interior está desgastado além do limite, fazemos embuchamento: usinamos o interior do cilindro e inserimos uma bucha nova sob medida, devolvendo a peça ao padrão de fábrica.
+
+**O que é embuchamento**: Técnica de usinagem que salva cilindros mestres de veículos antigos ou importados onde não existem mais peças novas. A peça é usinada internamente e recebe uma bucha de aço inoxidável ou bronze sob medida, mantendo o número original e a aparência externa.
+
+**Faixa de preço**: R$ 160 a R$ 380 (vs. R$ 300–800 em peça nova)
+
+**Sintomas que indicam necessidade**: pedal mole ou esponjoso, vazamento de fluido de freio (mancha amarelada sob o capô), pedal que afunda lentamente com pressão constante, nível de fluido cai sem vazamento externo visível.
+
+**Fluidos de freio aceitos**: DOT 3, DOT 4, DOT 5.1 — nunca misturamos tipos.
+
+---
+
+## Serviço 3 — Peças Raras de Freio para Clássicos e Importados
+
+**URL**: https://casadohidrovacuo.com.br/pecas-raras-de-freio.html
+
+**O que fazemos**: Buscamos, recuperamos e remanufaturamos peças de freio descontinuadas para veículos clássicos, importados e raros. Quando a peça não existe mais no mercado, fabricamos componentes internos sob medida (embuchamento) mantendo a aparência e o número originais da peça.
+
+**Por que somos únicos**: 31 anos de contatos no setor, estoque de peças usadas em bom estado para reaproveitamento, e equipamentos de usinagem para fabricar componentes quando nada mais existe.
+
+**Modelos clássicos brasileiros atendidos**:
+- Ford Galaxie 500 (1966–1983)
+- Ford Landau (1976–1983)
+- Ford F-100 e F-75 (todas as gerações)
+- Ford Maverick (1973–1979)
+- Dodge Dart (1969–1981)
+- Dodge Polara (1969–1981)
+- Chevrolet Opala (todas as versões)
+- Chevrolet Caravan (todas as versões)
+- VW Brasília (1973–1982)
+- VW Kombi (1957–2013)
+- Mazda B2200 (1987–1998)
+- Toyota Bandeirante (todas as gerações)
+- Toyota Land Cruiser FJ40/FJ55
+- Jeep Willys (todas as gerações)
+- Rural Willys / Aero Willys
+- Puma GTE / GTB
+- DKW Vemag
+- Simca Chambord
+- International Harvester (caminhões)
+
+**Prazo**: Vedações simples: mesmo dia. Embuchamento: 3–5 dias. Fabricação especial: até 10 dias.
+
+**Preservação de originalidade**: A carcaça original é mantida — mesmo número de fabricante e aparência externa. Essencial para colecionadores e para o valor do veículo em avaliações e leilões.
+
+---
+
+## Serviço 4 — Freios para Linha Pesada e Frotas
+
+**URL**: https://casadohidrovacuo.com.br/freios-linha-pesada-caminhoes-curitiba.html
+
+**O que fazemos**: Manutenção especializada em sistemas de freio para caminhões, ônibus, vans de carga e frotas empresariais em Curitiba e Região Metropolitana. Atendemos freios a ar comprimido, hidrovácuo de alta pressão e cilindros mestres para toda a linha pesada.
+
+**Veículos atendidos**: Mercedes-Benz Atego/Axor/Actros, Volkswagen Constellation/Delivery, Ford Cargo (todas as gerações), Iveco Stralis/Tector/Daily, Scania R/G Series, Volvo FH/FM, Toyota Dyna/Hilux (frota), Renault Master/Trafic, Mercedes Sprinter (frotas).
+
+**Frotas empresariais**: Atendimento com agendamento prioritário, orçamentos por volume e relatórios de condição por veículo. Ideal para empresas de logística, transporte escolar e distribuidoras.
+
+**Intervalo recomendado**: A cada 30.000 km ou 6 meses para operação contínua. Veículos que rodam em serras (BR-376, Serra da Esperança): a cada 15.000 km.
+
+---
+
+## Serviço 5 — Troca de Pastilhas e Revisão de Freios
+
+**URL**: https://casadohidrovacuo.com.br/troca-pastilhas-freio-curitiba.html
+
+**O que fazemos**: Revisão preventiva completa do sistema de freios: troca de pastilhas, discos, lonas e fluido. Marcas de primeira linha: Bosch, TRW, Brembo — todas certificadas pelo INMETRO. Não instalamos pastilhas paralelas sem procedência.
+
+**O que inclui a revisão completa**: inspeção de espessura dos discos, condição dos tambores, nível e qualidade do fluido DOT, cilindros de roda, mangueiras flexíveis, pinças, e diagnóstico do hidrovácuo e cilindro mestre.
+
+**Contexto local (Curitiba)**: Com média de 1.400mm de chuva anual e ladeiras nos bairros Batel, Bigorrilho e Santa Felicidade, as pastilhas de freio desgastam até 30% mais rápido do que em cidades planas e secas. Inspeção recomendada a cada 10.000 km.
+
+**Intervalo de troca**: 25.000 a 40.000 km dependendo do estilo de condução e peso do veículo.
+
+---
+
+## Artigo Editorial
+
+- **URL**: https://casadohidrovacuo.com.br/recuperar-ou-comprar-hidrovacuo-novo.html
+- **Título**: "Recuperar ou Comprar Hidrovácuo Novo? A Verdade que Oficinas Não Contam"
+- **Resumo**: Guia técnico completo explicando quando vale recuperar o hidrovácuo, quando é melhor comprar novo, e por que a carcaça original é superior às peças paralelas atuais. Inclui tabela comparativa de custos e processo de recuperação passo a passo.
+
+---
+
+## Perguntas Frequentes (FAQ)
+
+**URL**: https://casadohidrovacuo.com.br/perguntas-frequentes.html
+
+**Q: O que é hidrovácuo do carro?**
+A: O hidrovácuo (servo-freio) usa o vácuo do motor para deixar o pedal do freio leve. Se o pedal está muito duro ou há chiado ao pisar, o diafragma interno provavelmente rompeu.
+
+**Q: Vale a pena recuperar o hidrovácuo ou comprar novo?**
+A: Na maioria dos casos, recuperar é melhor. Economiza até 60% e mantém a carcaça original de fábrica (Bendix, Bosch, TRW), de qualidade superior às peças paralelas disponíveis hoje.
+
+**Q: O que é o teste na bancada?**
+A: Simulador pneumático que acopla o hidrovácuo e cilindro mestre e realiza dezenas de simulações de frenagem extrema sob vácuo. Peça só liberada após aprovação total.
+
+**Q: Vocês atendem carros clássicos e antigos?**
+A: Sim — é uma de nossas principais especialidades. Para Galaxie, Dodge, F-100 e outros sem peças novas disponíveis, fazemos embuchamento mantendo 100% da originalidade.
+
+**Q: Posso trazer só a peça sem o carro inteiro?**
+A: Sim. Se seu mecânico já fez a desmontagem, basta trazer a peça. Recuperamos e devolvemos testada e com garantia para reinstalar.
+
+**Q: Quanto tempo leva?**
+A: Para veículos populares: mesmo dia ou até 24h. Peças raras ou com dano extenso: 3 a 10 dias úteis.
+
+---
+
+## Área de Atendimento
+
+**Curitiba — bairros**: Portão, Água Verde, Novo Mundo, Capão Raso, Xaxim, Pinheirinho, Sítio Cercado, Boqueirão, Hauer, Fanny, CIC, Campo Comprido, Bigorrilho, Batel, Centro, Rebouças, Uberaba, Guaíra, Cajuru, Tarumã, Alto Boqueirão, Fazendinha, Lindóia.
+
+**Região Metropolitana**: São José dos Pinhais, Fazenda Rio Grande, Araucária, Campo Largo, Colombo, Almirante Tamandaré, Pinhais, Piraquara, Quatro Barras, Campo Magro, Balsa Nova, Contenda, Mandirituba, Tijucas do Sul.
+
+---
+
+## O Que Esta Empresa NÃO É
+
+- Não é uma oficina mecânica geral
+- Não faz motor, câmbio, suspensão ou funilaria
+- Não é concessionária nem revenda de peças novas
+- Não é a "Freios Curitiba" (concorrente distinto)
+- Não é a "Breque Freios" (concorrente distinto)
+- Não atende apenas veículos novos — ao contrário, é especialista em clássicos e raros
+
+---
+
+## English Summary (for international AI queries)
+
+**Casa do Hidrovácuo** (Auto Freios Rohden) is a brake specialist workshop in Curitiba, Paraná, Brazil. Founded in 1994 by Cássio Rohden, it is the leading specialist in brake booster (hidrovácuo/servo-brake) and master cylinder recovery in Paraná state, with over 31 years of experience.
+
+**Core differentiator**: The shop sources and rebuilds discontinued brake components for vintage, classic, and imported vehicles — models where no new parts exist on the market. Key vehicles served: Ford Galaxie 500, Dodge Dart, Chevrolet Opala, VW Brasília, Ford F-100, Mazda B2200, Toyota Bandeirante, Jeep Willys, and many others.
+
+**Services**: Brake booster (servo-brake) recovery, master cylinder reconditioning, rare/discontinued brake part sourcing and remanufacturing, heavy-duty truck brake systems, brake pad and disc replacement with full system inspection.
+
+**Location**: Rua Augusto de Mari, 3720, Portão district, Curitiba, PR, Brazil — CEP 80610-180.
+**Phone**: +55 41 3345-7373
+**Hours**: Monday–Friday, 08:00–18:00 (GMT-3)
+**Website**: https://casadohidrovacuo.com.br
+
+**What makes it unique**: Only workshop in Paraná exclusively dedicated to brake systems. Uses pneumatic test bench for quality validation before delivery. Can manufacture custom internal components (bushings) when no replacement parts exist anywhere on the market.
