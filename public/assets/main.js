@@ -172,3 +172,74 @@ function trackLead(serviceName) {
     gtag('event', 'generate_lead', { lead_source: 'whatsapp_form', service: serviceName });
   }
 }
+
+/* ── Novo formulário de diagnóstico (CRO v2) ── */
+function initDiagnosticoForm() {
+  const form = document.getElementById('diagnostico-form');
+  if (!form) return;
+
+  // Sintoma pills — múltipla seleção
+  const symptomPills = Array.from(document.querySelectorAll('#symptom-selector .symptom-pill'));
+  symptomPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      pill.classList.toggle('selected');
+    });
+  });
+
+  // Urgência pills — seleção única
+  const urgencyPills = Array.from(document.querySelectorAll('[data-urgency]'));
+  urgencyPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      urgencyPills.forEach(p => p.classList.remove('selected'));
+      pill.classList.add('selected');
+    });
+  });
+
+  // Hero symptom pills sync com hero card
+  const heroPills = Array.from(document.querySelectorAll('#hero-symptom-card .symptom-pill'));
+  heroPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      heroPills.forEach(p => p.classList.remove('selected'));
+      pill.classList.add('selected');
+      // Pre-select in main form when scrolled
+      const match = symptomPills.find(p => p.dataset.symptom === pill.dataset.symptom);
+      if (match) {
+        symptomPills.forEach(p => p.classList.remove('selected'));
+        match.classList.add('selected');
+      }
+    });
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name  = document.getElementById('lead-name')?.value?.trim();
+    const phone = document.getElementById('lead-phone')?.value?.trim();
+    const vtype = document.getElementById('vehicle-type')?.value || '';
+    const vmodel= document.getElementById('vehicle-model')?.value?.trim() || '';
+    const extra = document.getElementById('lead-details')?.value?.trim() || '';
+    const otherSymptom = document.getElementById('symptom-other-input')?.value?.trim() || '';
+
+    if (!name || !phone) { alert('Por favor, preencha seu nome e WhatsApp.'); return; }
+
+    // Collect selected symptoms
+    const selected = symptomPills.filter(p => p.classList.contains('selected')).map(p => p.dataset.symptom);
+    if (otherSymptom) selected.push(otherSymptom);
+    const selectedUrgency = urgencyPills.find(p => p.classList.contains('selected'))?.textContent?.trim() || '';
+
+    let text = `Olá! Quero um orçamento de freios (via site):\n\n`;
+    if (selected.length) text += `*Sintoma(s):* ${selected.join(', ')}\n`;
+    if (vtype || vmodel) text += `*Veículo:* ${vtype} — ${vmodel}\n`;
+    if (selectedUrgency) text += `*Urgência:* ${selectedUrgency}\n`;
+    text += `*Nome:* ${name}\n*WhatsApp:* ${phone}\n`;
+    if (extra) text += `\n*Detalhes:* ${extra}`;
+
+    requestIdleCallback ? requestIdleCallback(() => trackLead('diagnostico_v2')) : trackLead('diagnostico_v2');
+    window.location.href = `https://wa.me/554133457373?text=${encodeURIComponent(text)}`;
+  });
+}
+
+// Append to init
+const _origInit = typeof init === 'function' ? init : null;
+document.addEventListener('DOMContentLoaded', () => {
+  initDiagnosticoForm();
+});
