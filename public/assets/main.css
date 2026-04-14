@@ -443,7 +443,7 @@ h5 {
 
 .hero-inner {
   display: grid;
-  grid-template-columns: 1fr 420px;
+  grid-template-columns: 1fr;
   gap: 60px;
   align-items: center;
   max-width: 100%;
@@ -531,6 +531,12 @@ h5 {
   position: sticky;
   top: 60px;
   z-index: 100;
+  margin-top: 0;
+}
+.trust-bar.trust-bar-top {
+  top: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .trust-marquee {
