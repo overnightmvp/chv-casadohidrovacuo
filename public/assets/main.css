@@ -453,9 +453,8 @@ h5 {
   grid-template-columns: 1fr 420px;
   gap: 60px;
   align-items: center;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 24px;
+  max-width: 100%;
+  padding: 0 40px;
 }
 
 .hero-eyebrow {
