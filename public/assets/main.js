@@ -243,3 +243,20 @@ const _origInit = typeof init === 'function' ? init : null;
 document.addEventListener('DOMContentLoaded', () => {
   initDiagnosticoForm();
 });
+
+/* ── Urgency banner: torna compacto no scroll ── */
+function initUrgencyBanner() {
+  const banner = document.querySelector('.urgency-banner');
+  if (!banner) return;
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        banner.classList.toggle('compact', window.scrollY > 80);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+}
+document.addEventListener('DOMContentLoaded', initUrgencyBanner);
