@@ -7,6 +7,25 @@
   # No build command needed for static site
   command = ""
 
+# ── Canonical domain: force https + non-www ──
+[[redirects]]
+  from = "https://www.casadohidrovacuo.com.br/*"
+  to = "https://casadohidrovacuo.com.br/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.casadohidrovacuo.com.br/*"
+  to = "https://casadohidrovacuo.com.br/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://casadohidrovacuo.com.br/*"
+  to = "https://casadohidrovacuo.com.br/:splat"
+  status = 301
+  force = true
+
 # Headers for security and performance
 [[headers]]
   for = "/*"
