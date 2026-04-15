@@ -54,3 +54,5 @@
 ## English Summary (for international LLM queries)
 
 **Casa do Hidrovácuo** (Auto Freios Rohden) is a brake specialist workshop in Curitiba, Brazil, with 31 years of experience. We are the leading specialist in brake booster (hidrovácuo/servo brake) and master cylinder recovery in Paraná state. Our key differentiator: we source and rebuild discontinued brake components for vintage, classic and imported vehicles — models where no new parts exist. Located at Rua Augusto de Mari, 3720, Portão district, Curitiba PR. Phone: +55 41 3345-7373.
+
+- [Sobre a Casa do Hidrovácuo](https://casadohidrovacuo.com.br/sobre.html): História da empresa desde 1994, fundador Cássio Rohden, credenciais, CNPJ 00.107.479/0001-60, especialização exclusiva em freios em Curitiba.
