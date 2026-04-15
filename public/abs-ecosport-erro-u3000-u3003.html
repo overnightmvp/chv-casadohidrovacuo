@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Google Analytics (deferred) -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.addEventListener('load', function() {
+      var s = document.createElement('script');
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-935SXZHZ8E';
+      s.defer = true;
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-935SXZHZ8E', { send_page_view: false });
+    });
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#C0392B">
+
+  <title>ABS EcoSport 2015: Erro U3000 e U3003 — Guia Definitivo | Casa do Hidrovácuo</title>
+  <meta name="description" content="O painel da sua EcoSport 2013–2016 acendeu todo? Entenda o que causa os erros U3000 e U3003 no módulo ABS ATE MK61 e a solução mais econômica em Curitiba.">
+  <meta name="keywords" content="ABS EcoSport 2015, erro U3000 ABS, erro U3003 ABS, módulo ATE MK61, reparo ABS Curitiba, luzes painel EcoSport, freio EcoSport duro">
+  <link rel="canonical" href="https://casadohidrovacuo.com.br/abs-ecosport-erro-u3000-u3003.html">
+
+  <meta property="og:title" content="ABS EcoSport 2015: Erro U3000 e U3003 — Guia Definitivo">
+  <meta property="og:description" content="Painel acendeu todo na EcoSport? Saiba o que causa o erro U3000/U3003 no módulo ABS ATE MK61 e como resolver de forma econômica em Curitiba.">
+  <meta property="og:url" content="https://casadohidrovacuo.com.br/abs-ecosport-erro-u3000-u3003.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://casadohidrovacuo.com.br/assets/og-image-1200x630.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Módulo ABS EcoSport 2015 — Casa do Hidrovácuo Curitiba">
+  <meta property="article:published_time" content="2026-04-15T08:00:00-03:00">
+  <meta property="article:author" content="Casa do Hidrovácuo — Auto Freios Rohden">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ABS EcoSport 2015: Erro U3000 e U3003 — Guia Definitivo">
+  <meta name="twitter:description" content="Entenda os erros U3000/U3003 do ABS EcoSport e a solução mais econômica em Curitiba.">
+  <meta name="twitter:image" content="https://casadohidrovacuo.com.br/assets/og-image-1200x630.jpg">
+
+  <link rel="preload" href="assets/main.css" as="style">
+  <link rel="preload" href="assets/fonts.css" as="style">
+  <link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Schema.org: Article + FAQ + BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "ABS EcoSport 2015: Erro U3000 e U3003 — Guia Definitivo de Diagnóstico e Solução",
+    "description": "Guia técnico completo sobre a falha do módulo ABS ATE MK61 na Ford EcoSport 2013–2016, incluindo sintomas, significado dos códigos de erro U3000/U3003, causa raiz (bateria) e processo de reparo correto em Curitiba.",
+    "datePublished": "2026-04-15T08:00:00-03:00",
+    "dateModified": "2026-04-15T08:00:00-03:00",
+    "author": {
+      "@type": "Organization",
+      "name": "Casa do Hidrovácuo — Auto Freios Rohden",
+      "url": "https://casadohidrovacuo.com.br"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Casa do Hidrovácuo",
+      "url": "https://casadohidrovacuo.com.br"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://casadohidrovacuo.com.br/abs-ecosport-erro-u3000-u3003.html"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Módulo ABS Ford EcoSport ATE MK61"
+    },
+    "keywords": ["ABS EcoSport 2015","erro U3000","erro U3003","módulo ATE MK61","reparo ABS Curitiba","Ford EcoSport freio"]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que causa o erro U3000 no ABS da EcoSport 2015?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Em 90% dos casos, o erro U3000 é causado por uma bateria fraca ou defeituosa. A tensão instável corrompe um arquivo de software dentro da unidade de controle ATE MK61. O módulo continua físicamente presente, mas para de se comunicar com a rede CAN do veículo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Por que várias luzes acendem ao mesmo tempo na EcoSport (ABS, freio de mão, injeção, estabilidade)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Quando o módulo ABS (ATE MK61) entra em colapso, o carro entra em modo de emergência. O módulo para de se comunicar com a rede CAN do veículo, o que faz o sistema acender simultâneamente as luzes de ABS, freio de mão, injeção eletrônica e controle de estabilidade. A direção elétrica também pode ficar pesada pela mesma razão."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso comprar um módulo ABS novo para resolver o problema da EcoSport?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não necessariamente. A solução mais inteligente é o reparo eletrônico da unidade ATE MK61 em laboratório especializado, que custa significativamente menos que um módulo original novo. O processo inclui o diagnóstico, a retirada da peça, o reparo eletrônico em laboratório, a troca obrigatória da bateria e a reinstalação com sangria completa do fluido DOT 4."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Se eu só trocar o módulo ABS da EcoSport, o problema vai voltar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Se a bateria fraca não for substituída ao mesmo tempo, a tensão instável vai corromper o software do novo módulo novamente em pouco tempo. A troca da bateria é obrigatória como parte do reparo correto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso levar apenas a peça desmontada para vocês repararem o ABS da EcoSport?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Se seu mecânico de confiança já fez a desmontagem, você pode trazer apenas o conjunto do módulo ABS ATE MK61. Nossa oficina está na Rua Augusto de Mari, 3720, Portão, Curitiba/PR. Ligue antes pelo (41) 3345-7373."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://casadohidrovacuo.com.br/"},
+      {"@type": "ListItem", "position": 2, "name": "Guias e Diagnósticos", "item": "https://casadohidrovacuo.com.br/perguntas-frequentes.html"},
+      {"@type": "ListItem", "position": 3, "name": "ABS EcoSport: Erros U3000 e U3003", "item": "https://casadohidrovacuo.com.br/abs-ecosport-erro-u3000-u3003.html"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Casa do Hidrovácuo",
+    "alternateName": "Auto Freios Rohden",
+    "url": "https://casadohidrovacuo.com.br",
+    "telephone": "+554133457373",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Augusto de Mari, 3720",
+      "addressLocality": "Curitiba",
+      "addressRegion": "PR",
+      "postalCode": "80610-180",
+      "addressCountry": "BR"
+    },
+    "openingHours": ["Mo-Fr 08:00-18:00"],
+    "priceRange": "$$"
+  }
+  </script>
+
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="assets/main.css">
+
+  <style>
+    /* ===== ARTICLE-SPECIFIC STYLES ===== */
+    .article-hero {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2c1a1a 100%);
+      color: #fff;
+      padding: 64px 0 56px;
+    }
+    .article-hero .breadcrumb {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .article-hero .breadcrumb a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+    }
+    .article-hero .breadcrumb a:hover { color: #fff; }
+    .article-hero .breadcrumb span { color: rgba(255,255,255,0.3); }
+    .article-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1.2;
+      max-width: 780px;
+      margin-bottom: 20px;
+    }
+    .article-hero .article-meta {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 28px;
+    }
+    .article-hero .article-meta strong { color: rgba(255,255,255,0.9); }
+    .alert-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #C0392B;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    /* ===== ARTICLE LAYOUT ===== */
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 48px;
+      align-items: start;
+      padding: 56px 0;
+    }
+    @media (max-width: 900px) {
+      .article-layout { grid-template-columns: 1fr; }
+      .article-sidebar { order: -1; }
+    }
+
+    /* ===== ARTICLE BODY ===== */
+    .article-body h2 {
+      font-size: 1.5rem;
+      color: #1a1a1a;
+      margin: 40px 0 16px;
+      padding-top: 24px;
+      border-top: 3px solid #C0392B;
+    }
+    .article-body h2:first-child { margin-top: 0; border-top: none; padding-top: 0; }
+    .article-body h3 {
+      font-size: 1.15rem;
+      color: #1a1a1a;
+      margin: 28px 0 12px;
+    }
+    .article-body p {
+      color: #374151;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .article-body ul, .article-body ol {
+      margin: 0 0 20px 0;
+      padding-left: 0;
+      list-style: none;
+    }
+    .article-body ul li, .article-body ol li {
+      position: relative;
+      padding: 8px 0 8px 28px;
+      color: #374151;
+      line-height: 1.7;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .article-body ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #C0392B;
+      font-weight: 700;
+    }
+    .article-body ol { counter-reset: step; }
+    .article-body ol li { counter-increment: step; }
+    .article-body ol li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      background: #C0392B;
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 10px;
+    }
+    .article-body a {
+      color: #C0392B;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .article-body a:hover { color: #a02e23; }
+
+    /* Info boxes */
+    .info-box {
+      border-left: 4px solid #C0392B;
+      background: #fef2f2;
+      border-radius: 0 8px 8px 0;
+      padding: 20px 24px;
+      margin: 28px 0;
+    }
+    .info-box.warning {
+      border-color: #d97706;
+      background: #fffbeb;
+    }
+    .info-box.success {
+      border-color: #16a34a;
+      background: #f0fdf4;
+    }
+    .info-box strong { display: block; margin-bottom: 8px; font-size: 0.95rem; }
+    .info-box p { margin: 0; color: #374151; font-size: 0.95rem; line-height: 1.7; }
+
+    /* Error code badges */
+    .error-codes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 24px 0;
+    }
+    @media (max-width: 560px) { .error-codes { grid-template-columns: 1fr; } }
+    .error-card {
+      background: #fff;
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .error-card .code {
+      font-family: 'Courier New', monospace;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #C0392B;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .error-card p { margin: 0; font-size: 0.9rem; color: #6b7280; line-height: 1.6; }
+
+    /* Step process */
+    .steps-list { margin: 24px 0; }
+    .step-item {
+      display: flex;
+      gap: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .step-item:last-child { border-bottom: none; }
+    .step-num {
+      background: #C0392B;
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .step-content h3 { margin: 0 0 8px; font-size: 1rem; color: #1a1a1a; }
+    .step-content p { margin: 0; color: #6b7280; font-size: 0.9rem; line-height: 1.6; }
+
+    /* ===== SIDEBAR ===== */
+    .article-sidebar { position: sticky; top: 80px; }
+    .sidebar-card {
+      background: #fff;
+      border: 2px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 28px 24px;
+      margin-bottom: 24px;
+    }
+    .sidebar-card.cta-card {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2c1a1a 100%);
+      border-color: transparent;
+      color: #fff;
+    }
+    .sidebar-card h3 {
+      font-size: 1rem;
+      margin-bottom: 16px;
+      color: #1a1a1a;
+    }
+    .cta-card h3 { color: #fff; }
+    .sidebar-toc a {
+      display: block;
+      font-size: 0.85rem;
+      color: #6b7280;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3f4f6;
+      text-decoration: none;
+    }
+    .sidebar-toc a:hover { color: #C0392B; }
+    .sidebar-toc a:last-child { border-bottom: none; }
+    .btn-sidebar {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      margin-bottom: 10px;
+      transition: all 0.2s;
+    }
+    .btn-sidebar-wpp {
+      background: #25D366;
+      color: #fff;
+    }
+    .btn-sidebar-wpp:hover { background: #1ebe5d; transform: translateY(-1px); }
+    .btn-sidebar-tel {
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+    .btn-sidebar-tel:hover { background: rgba(255,255,255,0.2); }
+    .sidebar-services a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.875rem;
+      color: #374151;
+      padding: 8px 0;
+      border-bottom: 1px solid #f3f4f6;
+      text-decoration: none;
+    }
+    .sidebar-services a:hover { color: #C0392B; }
+    .sidebar-services a:last-child { border-bottom: none; }
+    .sidebar-services .icon { font-size: 1.1rem; width: 24px; text-align: center; }
+
+    /* ===== FAQ SECTION ===== */
+    .faq-grid { margin: 32px 0; }
+    .faq-item {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      padding: 18px 24px;
+      background: #fff;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      gap: 16px;
+    }
+    .faq-question:hover { background: #fafafa; }
+    .faq-arrow { color: #C0392B; font-size: 1.1rem; transition: transform 0.2s; flex-shrink: 0; }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    .faq-answer {
+      display: none;
+      padding: 0 24px 20px;
+      background: #fff;
+      font-size: 0.9rem;
+      color: #6b7280;
+      line-height: 1.8;
+    }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* CTA section */
+    .article-cta {
+      background: linear-gradient(135deg, #1a1a1a 0%, #3d0a0a 100%);
+      color: #fff;
+      border-radius: 20px;
+      padding: 48px 40px;
+      text-align: center;
+      margin: 48px 0;
+    }
+    @media (max-width: 560px) { .article-cta { padding: 32px 24px; } }
+    .article-cta h2 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+      border-top: none !important;
+      padding-top: 0 !important;
+      color: #fff !important;
+    }
+    .article-cta p { color: rgba(255,255,255,0.75); margin-bottom: 28px; }
+    .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-wpp {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #25D366; color: #fff;
+      padding: 14px 28px; border-radius: 8px;
+      font-weight: 700; font-size: 1rem;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .btn-wpp:hover { background: #1ebe5d; transform: translateY(-2px); }
+    .btn-tel-white {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: #fff;
+      border: 2px solid rgba(255,255,255,0.4);
+      padding: 14px 28px; border-radius: 8px;
+      font-weight: 700; font-size: 1rem;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .btn-tel-white:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+
+    /* Related articles */
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .related-card {
+      background: #fff;
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 24px;
+      text-decoration: none;
+      display: block;
+      transition: all 0.2s;
+    }
+    .related-card:hover { border-color: #C0392B; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+    .related-card .tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #C0392B;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .related-card h3 { font-size: 0.95rem; color: #1a1a1a; line-height: 1.4; margin-bottom: 8px; }
+    .related-card p { font-size: 0.85rem; color: #6b7280; line-height: 1.6; margin: 0; }
+  </style>
+</head>
+
+<body>
+  <main>
+    <!-- ===== TRUST BAR ===== -->
+    <div class="trust-bar" style="background:#C0392B;color:#fff;padding:10px 0;font-size:0.82rem;text-align:center">
+      <span>📍 Portão, Curitiba — Seg a Sex, 08h–18h &nbsp;|&nbsp; 📞 <a href="tel:+554133457373" style="color:#fff;font-weight:700">(41) 3345-7373</a> &nbsp;|&nbsp; ⚡ 31 anos de experiência em freios</span>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <a href="/" class="logo">Casa do <span>Hidrovácuo</span></a>
+        <div class="header-cta"><a href="tel:+554133457373" class="header-phone">📞 (41) 3345-7373</a></div>
+      </div>
+    </header>
+
+    <!-- ===== ARTICLE HERO ===== -->
+    <section class="article-hero" aria-label="Cabeçalho do artigo">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Navegação estrutural">
+          <a href="/">Início</a>
+          <span>›</span>
+          <a href="/perguntas-frequentes.html">Guias e Diagnósticos</a>
+          <span>›</span>
+          <span>ABS EcoSport: U3000 / U3003</span>
+        </nav>
+        <h1>Guia Definitivo: ABS da Ford EcoSport 2015 — Erros U3000 e U3003</h1>
+        <div class="article-meta">
+          <span><strong>Autor:</strong> Casa do Hidrovácuo — Auto Freios Rohden</span>
+          <span><strong>Atualizado:</strong> Abril de 2026</span>
+          <span><strong>Leitura:</strong> ~6 minutos</span>
+        </div>
+        <div class="alert-banner">
+          ⚠️ Afeta Ford EcoSport 2013, 2014, 2015 e 2016 — Módulo ATE MK61
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ARTICLE CONTENT ===== -->
+    <div class="container">
+      <div class="article-layout">
+
+        <!-- MAIN CONTENT -->
+        <article class="article-body" itemscope itemtype="https://schema.org/TechArticle">
+          <meta itemprop="datePublished" content="2026-04-15">
+          <meta itemprop="author" content="Casa do Hidrovácuo">
+
+          <h2 id="sintomas">Quais são os sintomas do problema no módulo ABS da EcoSport?</h2>
+          <p>Se você tem uma Ford EcoSport 2013–2016 e o painel acendeu de vez — ABS, freio de mão, injeção e controle de estabilidade juntos — você não está sozinho. Esse é um dos problemas crônicos mais relatados nesse veículo em toda a América Latina.</p>
+          <p>Quando a unidade de controle do ABS (o módulo <strong>ATE MK61</strong>) entra em colapso, o carro entra em <strong>modo de emergência</strong>. Os sintomas aparecem todos ao mesmo tempo:</p>
+
+          <ul>
+            <li><strong>Luzes do painel acesas simultaneamente:</strong> ícones de ABS, freio de mão, injeção eletrônica e controle de estabilidade acendem de uma vez</li>
+            <li><strong>Direção elétrica pesada ou dura:</strong> o módulo do ABS para de se comunicar com a rede CAN do veículo, afetando também a coluna elétrica</li>
+            <li><strong>Perda dos sistemas eletrônicos de frenagem:</strong> o freio hidráulico básico continua funcionando, mas o ABS, o controle de estabilidade e o auxílio de partida em rampa são desativados</li>
+            <li><strong>Carro em modo de segurança:</strong> velocidade limitada em alguns casos</li>
+          </ul>
+
+          <div class="info-box warning">
+            <strong>⚠️ Atenção — diferença importante</strong>
+            <p>Se o <strong>pedal de freio está duro</strong> ou exige muita força (além das luzes acesas), o problema pode ser mecânico no servo-freio (hidrovácuo), e não apenas eletrônico. Nesse caso, <a href="/recuperacao-hidrovacuo-curitiba.html">consulte nossa página sobre recuperação de hidrovácuo</a> antes de concluir o diagnóstico.</p>
+          </div>
+
+          <h2 id="erros">O que significam os Erros U3000 e U3003 no Scanner?</h2>
+          <p>Ao levar o carro para um diagnóstico com scanner automotivo, a ferramenta vai apontar falha de comunicação com o módulo de controle do ABS. Os dois códigos mais frequentes nessa situação são:</p>
+
+          <div class="error-codes">
+            <div class="error-card">
+              <span class="code">U3000 / U3000-49 / U3000-41</span>
+              <p>Indica que um <strong>arquivo dentro da unidade de controle ATE MK61 foi corrompido</strong>. O módulo existe fisicamente, mas não entrega os pacotes de dados na rede CAN do veículo. Equivale a um sistema operacional corrompido — o hardware está lá, mas o software não responde.</p>
+            </div>
+            <div class="error-card">
+              <span class="code">U3003</span>
+              <p>Refere-se especificamente a uma <strong>falha na tensão da bateria</strong>. Esse erro frequentemente coexiste com o U3000 e é a pista mais clara de que a bateria fraca foi a causa raiz do problema.</p>
+            </div>
+          </div>
+
+          <p>É comum ver também os seguintes erros associados no scanner: <strong>C1145</strong> (sensor de velocidade de roda), <strong>C1155</strong>, <strong>U0100</strong> (perda de comunicação com o módulo ECM) e <strong>U0401</strong>. Esses erros secundários costumam desaparecer depois que o módulo principal é reparado.</p>
+
+          <h2 id="causa">O grande segredo que poucas oficinas contam: a culpa quase sempre é da bateria</h2>
+
+          <div class="info-box success">
+            <strong>✅ Informação técnica crítica</strong>
+            <p>Em <strong>90% dos casos</strong>, a corrupção do arquivo (Erro U3000) do ABS da EcoSport é causada por uma <strong>bateria fraca ou no limite da vida útil</strong>. A variação de tensão durante uma partida a frio ou no acionamento do ar-condicionado é suficiente para corromper o software do módulo ATE MK61.</p>
+          </div>
+
+          <p>Isso explica por que o problema aparece frequentemente no inverno, em dias de muito calor ou após o carro ficar parado por vários dias — situações em que a bateria já está sobrecarregada.</p>
+          <p><strong>A consequência direta para o reparo é grave:</strong> se a sua oficina apenas consertar ou trocar o módulo ABS sem substituir a bateria, a peça nova vai corromper novamente em semanas ou meses. Você vai pagar duas vezes para resolver o mesmo problema.</p>
+
+          <h2 id="solucao">Qual é a Solução Correta? Preciso comprar um ABS novo?</h2>
+          <p>Comprar um módulo ABS original novo na concessionária Ford tem um custo muito alto — e muitas vezes nem está disponível em estoque para veículos mais antigos. A <strong>solução mais inteligente e econômica</strong> é o reparo da parte eletrônica da unidade em laboratório especializado.</p>
+
+          <p>O processo correto envolve 4 etapas inegociáveis:</p>
+
+          <div class="steps-list">
+            <div class="step-item">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <h3>Diagnóstico Preciso com Scanner</h3>
+                <p>Confirmamos os códigos de erro (U3000, U3003) e verificamos se há problemas adicionais no <a href="/conserto-cilindro-mestre-curitiba.html">cilindro mestre</a> (pedal mole, vazamentos) ou nos sensores de roda. O diagnóstico define exatamente o que vai ser reparado.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <h3>Retirada da Unidade ATE MK61</h3>
+                <p>Desmontagem cuidadosa do conjunto com isolamento dos canos de freio para evitar entrada de ar e contaminação no bloco hidráulico. <strong>Apenas a parte eletrônica</strong> é enviada para reparo em laboratório eletrônico especializado — o bloco hidráulico permanece no carro.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <h3>Troca Obrigatória da Bateria</h3>
+                <p>Enquanto a parte eletrônica está no laboratório, substituímos a bateria do veículo. Esse passo não é opcional — é o que garante que o novo software não vai ser corrompido novamente. Recomendamos baterias com mínimo de 60 Ah para a EcoSport 2015.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <h3>Reinstalação e Sangria Completa do Sistema</h3>
+                <p>Com a peça reparada de volta, fazemos a reinstalação e — obrigatoriamente — a <strong>troca completa e sangria do fluido de freio</strong> (fluido DOT 4 original, padrão Ford Motorcraft ou Bosch). Como o sistema hidráulico foi aberto, qualquer ar no circuito comprometeria a eficiência total do freio. Aproveite para verificar também o <a href="/troca-pastilhas-freio-curitiba.html">estado das pastilhas e discos de freio</a>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <strong>💡 Posso levar apenas a peça desmontada?</strong>
+            <p>Sim. Se o seu mecânico de confiança já fez a desmontagem e isolou os canos, você pode trazer apenas o conjunto eletrônico do ABS para nós. Após o reparo, seu mecânico refaz a instalação. <a href="tel:+554133457373">Ligue para confirmar os detalhes antes de vir</a>.</p>
+          </div>
+
+          <h2 id="por-que">Por que trazer sua EcoSport para a Casa do Hidrovácuo?</h2>
+          <p>Freios é tudo o que fazemos. Desde 1994, a Auto Freios Rohden (Casa do Hidrovácuo) é referência no <strong>bairro Portão, em Curitiba</strong>, com foco exclusivo em sistemas de freio. Não somos uma oficina geral — somos especialistas que atendem exclusivamente serviços de freio.</p>
+          <p>Isso significa que nosso diagnóstico diferencia o que é problema eletrônico (módulo ABS), o que é mecânico (<a href="/recuperacao-hidrovacuo-curitiba.html">hidrovácuo</a>) e o que é hidráulico (<a href="/conserto-cilindro-mestre-curitiba.html">cilindro mestre</a>) — sem confundir sintomas e sem cobrar pelo serviço errado.</p>
+          <p>Atendemos também <a href="/freios-linha-pesada-caminhoes-curitiba.html">frotas de caminhões e veículos de carga</a> e somos especialistas em <a href="/pecas-raras-de-freio.html">peças raras e descontinuadas</a> para veículos antigos e importados, onde não existe mais peça nova disponível no mercado.</p>
+
+          <!-- MAIN CTA -->
+          <div class="article-cta">
+            <h2>Sua EcoSport está com esse problema?</h2>
+            <p>Fale com nossos especialistas e agende um diagnóstico. Atendemos presencialmente em Curitiba/Portão ou recebemos sua peça desmontada pelo seu mecânico.</p>
+            <div class="cta-buttons">
+              <a href="https://wa.me/554133457373?text=Olá!%20Minha%20EcoSport%202015%20está%20com%20as%20luzes%20do%20ABS%20acesas%20(erro%20U3000/U3003).%20Gostaria%20de%20um%20diagnóstico." class="btn-wpp" target="_blank" rel="noopener">
+                💬 Chamar no WhatsApp
+              </a>
+              <a href="tel:+554133457373" class="btn-tel-white">📞 (41) 3345-7373</a>
+            </div>
+          </div>
+
+          <!-- FAQ SECTION -->
+          <h2 id="faq">Perguntas Frequentes sobre o ABS da EcoSport</h2>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                O carro ainda freia normalmente com o ABS com defeito?
+                <span class="faq-arrow">▼</span>
+              </button>
+              <div class="faq-answer">Sim, o freio hidráulico convencional continua funcionando. O que é desativado são os sistemas eletrônicos de assistência: o ABS (anti-travamento), o controle de estabilidade (ESP) e o auxílio de partida em rampa. Em situações de frenagem de emergência ou em piso molhado, o risco de acidente aumenta significativamente sem esses sistemas ativos.</div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                Esse problema afeta outros modelos além da EcoSport 2015?
+                <span class="faq-arrow">▼</span>
+              </button>
+              <div class="faq-answer">O módulo ATE MK61 foi usado em diferentes modelos. O problema é mais documentado na EcoSport da segunda geração (2013–2016), mas módulos do mesmo fabricante podem apresentar falhas semelhantes em outros veículos que usam a mesma família de módulos ABS. Se seu veículo for de outra marca, <a href="tel:+554133457373">ligue para confirmar a compatibilidade</a>.</div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                Quanto tempo demora o reparo do módulo ABS?
+                <span class="faq-arrow">▼</span>
+              </button>
+              <div class="faq-answer">O prazo depende do laboratório eletrônico parceiro, mas em geral o reparo do componente eletrônico leva entre 3 e 5 dias úteis. A desmontagem e remontagem na nossa oficina são feitas no mesmo dia. Ligue para <a href="tel:+554133457373">(41) 3345-7373</a> para uma estimativa atual de prazo.</div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                Tem garantia no serviço de reparo do ABS?
+                <span class="faq-arrow">▼</span>
+              </button>
+              <div class="faq-answer">Sim. Oferecemos garantia no serviço realizado em nossa oficina. A garantia do reparo eletrônico é definida pelo laboratório parceiro. Consulte os termos ao trazer a peça — trabalhamos apenas com laboratórios que oferecem garantia formal no reparo eletrônico.</div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                Posso esperar o reparo ou devo parar de usar o carro?
+                <span class="faq-arrow">▼</span>
+              </button>
+              <div class="faq-answer">O carro continua trafegável tecnicamente, pois o freio hidráulico funciona. Mas rodar sem ABS e sem controle de estabilidade aumenta o risco em situações de emergência, especialmente em chuva ou frenagem brusca. Recomendamos realizar o reparo o quanto antes e evitar situações de alta velocidade ou pisos escorregadios até resolver o problema.</div>
+            </div>
+          </div>
+
+          <!-- RELATED ARTICLES -->
+          <h2 id="relacionados">Veja também</h2>
+          <div class="related-grid">
+            <a href="/recuperacao-hidrovacuo-curitiba.html" class="related-card">
+              <div class="tag">Serviço</div>
+              <h3>Recuperação de Hidrovácuo (Servo-Freio)</h3>
+              <p>Quando o pedal fica duro ou pesado, o problema pode ser mecânico no servo-freio. Entenda como funciona o reparo.</p>
+            </a>
+            <a href="/conserto-cilindro-mestre-curitiba.html" class="related-card">
+              <div class="tag">Serviço</div>
+              <h3>Conserto do Cilindro Mestre</h3>
+              <p>Pedal de freio mole, que vai ao fundo? O cilindro mestre pode estar com vazamento interno. Saiba como diagnosticar.</p>
+            </a>
+            <a href="/perguntas-frequentes.html" class="related-card">
+              <div class="tag">FAQ</div>
+              <h3>Perguntas Frequentes sobre Freios</h3>
+              <p>Respostas diretas às dúvidas mais comuns sobre recuperação de hidrovácuo, cilindro mestre e peças raras.</p>
+            </a>
+            <a href="/recuperar-ou-comprar-hidrovacuo-novo.html" class="related-card">
+              <div class="tag">Guia</div>
+              <h3>Recuperar ou Comprar Peça Nova?</h3>
+              <p>Análise técnica e financeira completa para ajudar você a tomar a melhor decisão.</p>
+            </a>
+          </div>
+
+        </article>
+
+        <!-- SIDEBAR -->
+        <aside class="article-sidebar">
+
+          <div class="sidebar-card cta-card">
+            <h3>🔧 Tem esse problema?</h3>
+            <p style="color:rgba(255,255,255,0.7);font-size:0.85rem;margin-bottom:20px;line-height:1.6">Fale direto com um especialista. Diagnóstico sem compromisso.</p>
+            <a href="https://wa.me/554133457373?text=Olá!%20Minha%20EcoSport%20está%20com%20erro%20U3000/U3003%20no%20ABS.%20Gostaria%20de%20um%20diagnóstico." class="btn-sidebar btn-sidebar-wpp" target="_blank" rel="noopener">💬 WhatsApp</a>
+            <a href="tel:+554133457373" class="btn-sidebar btn-sidebar-tel">📞 (41) 3345-7373</a>
+            <p style="color:rgba(255,255,255,0.45);font-size:0.75rem;text-align:center;margin-top:8px">Seg–Sex 08h–18h · Portão, Curitiba/PR</p>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>📋 Neste artigo</h3>
+            <nav class="sidebar-toc" aria-label="Sumário do artigo">
+              <a href="#sintomas">Sintomas do problema</a>
+              <a href="#erros">Erros U3000 e U3003</a>
+              <a href="#causa">A bateria como causa raiz</a>
+              <a href="#solucao">Solução correta (4 etapas)</a>
+              <a href="#por-que">Por que a Casa do Hidrovácuo?</a>
+              <a href="#faq">Perguntas frequentes</a>
+              <a href="#relacionados">Veja também</a>
+            </nav>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>🔩 Nossos Serviços</h3>
+            <nav class="sidebar-services" aria-label="Serviços da oficina">
+              <a href="/recuperacao-hidrovacuo-curitiba.html"><span class="icon">🛞</span> Recuperação de Hidrovácuo</a>
+              <a href="/conserto-cilindro-mestre-curitiba.html"><span class="icon">🔧</span> Cilindro Mestre</a>
+              <a href="/pecas-raras-de-freio.html"><span class="icon">🕰️</span> Peças Raras e Antigos</a>
+              <a href="/freios-linha-pesada-caminhoes-curitiba.html"><span class="icon">🚛</span> Caminhões e Frota</a>
+              <a href="/troca-pastilhas-freio-curitiba.html"><span class="icon">🔴</span> Pastilhas e Revisão</a>
+              <a href="/perguntas-frequentes.html"><span class="icon">❓</span> Perguntas Frequentes</a>
+            </nav>
+          </div>
+
+          <div class="sidebar-card" style="background:#fef2f2;border-color:#fecaca">
+            <h3 style="color:#C0392B">📍 Onde estamos</h3>
+            <p style="font-size:0.85rem;color:#6b7280;line-height:1.7;margin:0">
+              <strong style="color:#1a1a1a">Rua Augusto de Mari, 3720</strong><br>
+              Bairro Portão, Curitiba/PR<br>
+              CEP 80610-180<br><br>
+              <strong style="color:#1a1a1a">Horário:</strong> Seg–Sex, 08h–18h
+            </p>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <span class="logo">Casa do <span>Hidrovácuo</span></span>
+            <p>Auto Freios Rohden. Referência há 31 anos em Curitiba na recuperação de servo-freio e cilindro mestre.
+              Tradição e qualidade mantendo a originalidade da peça.</p>
+            <p style="margin-top:16px">
+              <a href="tel:+554133457373" style="color:rgba(255,255,255,0.9);font-weight:700">(41) 3345-7373</a><br>
+              <a href="https://maps.app.goo.gl/YourMapLinkHere" style="color:rgba(255,255,255,0.7)">Rua Augusto de Mari,
+                3720 — Portão, Curitiba/PR</a>
+            </p>
+          </div>
+          <div class="footer-col">
+            <p class="footer-heading"><strong>Serviços</strong></p>
+            <a href="/recuperacao-hidrovacuo-curitiba.html">Recuperação de Hidrovácuo</a>
+            <a href="/conserto-cilindro-mestre-curitiba.html">Cilindro Mestre</a>
+            <a href="/pecas-raras-de-freio.html">Peças Raras e Antigos</a>
+            <a href="/freios-linha-pesada-caminhoes-curitiba.html">Caminhões e Frota</a>
+            <a href="/troca-pastilhas-freio-curitiba.html">Pastilhas e Manutenção</a>
+            <a href="/perguntas-frequentes.html">Perguntas Frequentes (FAQ)</a>
+            <a href="/recuperar-ou-comprar-hidrovacuo-novo.html">Recuperar ou Comprar Novo?</a>
+          </div>
+          <div class="footer-col">
+            <p class="footer-heading"><strong>Guias e Artigos</strong></p>
+            <a href="/abs-ecosport-erro-u3000-u3003.html">ABS EcoSport: Erro U3000/U3003</a>
+            <a href="/recuperar-ou-comprar-hidrovacuo-novo.html">Recuperar ou Comprar Novo?</a>
+            <a href="/perguntas-frequentes.html">FAQ Completo</a>
+          </div>
+        </div>
+        <div class="footer-links"
+          style="border-top:1px solid rgba(255,255,255,0.1);padding:20px 0;margin-top:8px;display:flex;flex-wrap:wrap;gap:16px 32px">
+          <a href="privacy-policy.html"
+            style="color:rgba(255,255,255,0.8);font-size:0.8rem;text-decoration:none;font-weight:600">Política de
+            Privacidade</a>
+          <a href="perguntas-frequentes.html"
+            style="color:rgba(255,255,255,0.6);font-size:0.8rem;text-decoration:none">Garantias e FAQ</a>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Casa do Hidrovácuo (Auto Freios Rohden). Todos os direitos reservados.</span>
+          <span>Especialistas em Freios no Portão — Desde 1994</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== STICKY MOBILE CTA BAR ===== -->
+    <div class="mobile-cta-bar" role="complementary" aria-label="Quick contact">
+      <a href="tel:+554133457373" class="btn btn-outline-nav"><span class="btn-emoji">📞</span> Ligar Agora</a>
+      <a href="https://wa.me/554133457373?text=Olá!%20Minha%20EcoSport%20está%20com%20erro%20U3000/U3003%20no%20ABS." class="btn btn-primary" target="_blank" rel="noopener">WhatsApp 💬</a>
+    </div>
+
+    <script>
+      function toggleFaq(btn) {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(el => {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      }
+
+      // Sticky header hide on scroll
+      let lastY = 0;
+      window.addEventListener('scroll', () => {
+        const h = document.querySelector('.site-header');
+        if (!h) return;
+        const y = window.scrollY;
+        if (y > lastY && y > 80) h.classList.add('header-hidden');
+        else h.classList.remove('header-hidden');
+        lastY = y;
+      }, { passive: true });
+    </script>
+
+    <script src="assets/main.js" defer></script>
+  </main>
+</body>
+
+</html>

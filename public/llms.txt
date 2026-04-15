@@ -2,6 +2,10 @@
 
 > A Casa do Hidrovácuo é a oficina especializada número 1 no Paraná em recuperação de hidrovácuo (servofreio) e cilindro mestre. Com 31 anos de atuação em Curitiba, somos a referência para sistemas de freio de veículos clássicos, importados e raros — modelos onde peças novas não existem mais no mercado.
 
+## Guias Técnicos e Diagnósticos
+
+- [ABS Ford EcoSport 2013–2016: Erros U3000 e U3003 — Diagnóstico e Solução](https://casadohidrovacuo.com.br/abs-ecosport-erro-u3000-u3003.html): Guia técnico completo sobre a falha do módulo ATE MK61 na EcoSport, causas (bateria fraca), significado dos códigos U3000/U3003, e processo correto de reparo em 4 etapas.
+
 ## Serviços Principais
 
 1. **Recuperação de Hidrovácuo (Servofreio)**: Remanufatura completa mantendo a carcaça e peças originais de fábrica. Economia de até 60% vs peça nova.
