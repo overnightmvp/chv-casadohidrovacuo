@@ -1,0 +1,6 @@
+# Redireciona www para não-www (301 permanente)
+https://www.casadohidrovacuo.com.br/*   https://casadohidrovacuo.com.br/:splat  301!
+
+# Garante HTTPS (Netlify já faz isso, mas aqui como fallback)
+http://casadohidrovacuo.com.br/*        https://casadohidrovacuo.com.br/:splat  301!
+http://www.casadohidrovacuo.com.br/*    https://casadohidrovacuo.com.br/:splat  301!
