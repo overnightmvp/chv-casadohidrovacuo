@@ -1,0 +1,21 @@
+
+Análise completa — Casa do Hidrovácuo Auto Freios Rohden
+Abaixo está o detalhamento narrativo de cada tarefa, complementando o painel visual acima.
+
+Pontuação de Autoridade em IA: 31/100
+DimensãoNotaJustificativaTécnico45/100Site em HTTPS, FAQ existente, HTML base legível, mas renderização JS parcialSchema20/100Nenhuma marcação estruturada identificadaOff-site25/100Presença em diretórios de baixa autoridade; zero menções editoriaisLegibilidade35/100Conteúdo editorial existe mas não está separado de elementos de UI
+
+Tarefa 1 — Auditoria de Alucinações e Menções
+Ao buscar "Casa do Hidrovácuo + servo freio Curitiba" e variações relacionadas, o resultado é consistente: nenhuma plataforma de IA menciona a marca de forma ativa. O LLM não alucina sobre ela (não inventa dados falsos), mas tampouco a cita. O padrão observado é: a IA descreve o serviço genericamente ou recomenda concorrentes que publicam conteúdo editorial.
+Alerta de NAP verificado: o site exibe (41) 3329-7594, enquanto a listagem no GuiaJa Guiaja, o SocorroAuto Socorro Auto e o Foursquare Foursquare registram (41) 3345-7373. Essa divergência é documentalmente confirmada e é um bloqueador crítico para consolidação de entidade.
+
+Tarefa 2 — Análise de Lacuna de Citação
+O principal concorrente de conteúdo identificado é a Breque Freios, que publicou conteúdo editorial estruturado sobre recuperação de hidrovácuo, com revisão sem custo e orçamento sem compromisso Breque Freios, e a Freios Curitiba, que posiciona-se como líder há três décadas na remanufatura de sistemas de freios automotivos Freioscuritiba. Ambas têm artigos indexáveis que os LLMs podem citar diretamente como fonte — a Casa do Hidrovácuo não tem nenhum equivalente.
+
+Tarefa 3 — Auditoria Técnica
+O site possui elementos positivos — a FAQ com 5 perguntas substantivas, uma tabela comparativa vs. oficinas e concessionárias, e depoimentos de clientes — mas nada está marcado com Schema.org. O /llms.txt está ausente, e o robots.txt e sitemap.xml não puderam ser confirmados diretamente.
+
+Tarefa 5 — Nota sobre o rascunho do /llms.txt
+O rascunho segue a especificação de Jeremy Howard: começa com o nome e bloco de resumo (>), lista URLs canônicas por serviço, declara os diferenciais de autoridade, registra o NAP canônico e define explicitamente o que a empresa não é (evita menções irrelevantes por LLMs). A seção bilíngue em inglês amplia a superfície de citação para consultas internacionais.
+
+Ação imediata: copiar o conteúdo do arquivo acima e publicar em https://casadohidrovacuo.com.br/llms.txt — esforço de 30 minutos, impacto de longo prazo.
